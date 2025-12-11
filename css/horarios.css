@@ -1,0 +1,287 @@
+/* IMPORTAR VARIABLES Y ESTILOS BASE */
+@import url("style.css");
+
+/*  HORARIOS  */
+
+.container-hora {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+  margin: 4rem;
+}
+
+.container-hora h1 {
+  font-size: 2.5rem;
+  color: var(--rojo-vino);
+  margin: 1rem;
+}
+
+.container-hora p {
+  font-size: 1rem;
+  color: var(--gris-texto);
+  margin: 1rem;
+}
+
+.temporadas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card-temporada {
+  background: var(--blanco-puro);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border-left: 5px solid var(--rojo-vino);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card-temporada:hover {
+  box-shadow: 0 8px 20px var(--rosa-chicle);
+  transform: scale(1.02);
+}
+
+.horarios-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.horarios-detalle.verano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.circulo-horario {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--rosa-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.circulo-horario:hover {
+  transform: scale(1.05);
+}
+
+.horario-contenido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.circulo-horario .dias {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.circulo-horario .horas {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.horario-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--blanco-secundario);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.horarios-detalle .horario-div:nth-child(2) {
+  background-color: var(--rosa-claro);
+}
+
+.horario-div:hover {
+  transform: translateX(5px);
+}
+
+.dias {
+  font-weight: 600;
+  color: var(--gris-texto);
+}
+
+.horas {
+  font-weight: bold;
+  color: var(--gris-texto);
+  font-size: 1rem;
+}
+
+/* SECCION INFORMACION ESPECIAL */
+
+.info-especial {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.info-especial h3 {
+  font-size: 2.3rem;
+  color: var(--rojo-vino);
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.info-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.info-box {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--blanco-puro);
+  border-radius: 15px;
+  border-left: 4px solid var(--rojo-vino);
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px var(--rosa-chicle);
+}
+
+.info-box h4 {
+  font-size: 1.5rem;
+  color: var(--rojo-vino);
+  margin-bottom: 0.5rem;
+}
+
+.info-box p {
+  color: var(--gris-texto);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container-hora h1 {
+    font-size: 2.2rem;
+  }
+
+  .container-hora p {
+    font-size: 1rem;
+  }
+
+  .temporadas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .info-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .container-hora {
+    margin: 6rem 1.5rem 3rem;
+    padding: 0 0.5rem;
+  }
+
+  .container-hora h1 {
+    font-size: 1.8rem;
+  }
+
+  .container-hora p {
+    font-size: 1rem;
+  }
+
+  .temporadas-grid {
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .card-temporada {
+    padding: 1.5rem;
+  }
+
+  .circulo-horario {
+    width: 160px;
+    height: 160px;
+  }
+
+  .circulo-horario .dias {
+    font-size: 1rem;
+  }
+
+  .circulo-horario .horas {
+    font-size: 1.3rem;
+  }
+
+  .horario-div {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+  }
+
+  .info-especial {
+    padding: 1.5rem;
+  }
+
+  .info-especial h3 {
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .info-box {
+    padding: 1.2rem;
+  }
+
+  .info-box h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .container-hora {
+    margin: 2rem 1rem;
+  }
+
+  .container-hora h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-temporada {
+    padding: 1.2rem;
+  }
+
+  .circulo-horario {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circulo-horario .horas {
+    font-size: 1rem;
+  }
+
+  .info-especial h3 {
+    font-size: 1.5rem;
+  }
+}

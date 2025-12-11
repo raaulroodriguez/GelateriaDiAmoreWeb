@@ -1,0 +1,446 @@
+/* IMPORTAR VARIABLES Y ESTILOS BASE */
+@import url("style.css");
+
+/* CONTAINER PALETAS */
+.container-paletas {
+  max-width: 1400px;
+  margin: 6rem auto 4rem;
+  padding: 0 2rem;
+}
+
+/* HERO PALETAS */
+.hero-paletas {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-paletas h1 {
+  font-size: 3rem;
+  color: var(--rojo-vino);
+  margin-bottom: 1rem;
+}
+
+.hero-paletas p {
+  font-size: 1.2rem;
+  color: var(--gris-texto);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* FILTROS */
+.filtros-container {
+  background: var(--blanco-puro);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px var(--sombra-morada);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.filtros-container h3 {
+  color: var(--rojo-vino);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filtros {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--rosa-claro);
+  background: var(--blanco-principal);
+  color: var(--rojo-vino);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filtro-btn:hover {
+  background: var(--rosa-claro);
+  transform: translateY(-2px);
+}
+
+#todos:checked ~ .filtros-container label[for="todos"],
+#frutas:checked ~ .filtros-container label[for="frutas"],
+#cremosos:checked ~ .filtros-container label[for="cremosos"],
+#especiales:checked ~ .filtros-container label[for="especiales"] {
+  background: var(--rojo-vino);
+  color: var(--blanco-puro);
+  border-color: var(--rojo-vino);
+}
+
+.paletas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#frutas:checked ~ .paletas-grid .paleta-card {
+  display: none;
+}
+#frutas:checked ~ .paletas-grid .paleta-card.frutas {
+  display: flex;
+}
+
+#cremosos:checked ~ .paletas-grid .paleta-card {
+  display: none;
+}
+#cremosos:checked ~ .paletas-grid .paleta-card.cremosos {
+  display: flex;
+}
+
+#especiales:checked ~ .paletas-grid .paleta-card {
+  display: none;
+}
+#especiales:checked ~ .paletas-grid .paleta-card.especiales {
+  display: flex;
+}
+
+/* CARDS PALETA */
+.paleta-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--blanco-puro);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px var(--sombra-morada);
+  transition: all 0.3s ease;
+}
+
+.paleta-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px var(--sombra-morada);
+}
+
+/* IMAGEN PALETA */
+.paleta-img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.paleta-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.paleta-card:hover .paleta-img img {
+  transform: scale(1.1);
+}
+
+.categoria {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.categoria.fruta {
+  background: var(--rosa-chicle);
+  color: var(--blanco-puro);
+}
+
+.categoria.cremoso {
+  background: var(--amarillo-dorado);
+  color: var(--negro);
+}
+
+.categoria.especial {
+  background: var(--rojo-vino);
+  color: var(--blanco-puro);
+}
+
+.temporada {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #22c55e;
+  color: var(--blanco-puro);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* INFO PALETA */
+.paleta-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.paleta-info h3 {
+  font-size: 1.5rem;
+  color: var(--rojo-vino);
+  margin-bottom: 0.8rem;
+}
+
+.descripcion {
+  color: var(--gris-texto);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* ALÉRGENOS */
+.alergenos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.alergeno {
+  width: 35px;
+  height: 35px;
+  background: var(--rosa-claro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rojo-vino);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.alergeno:hover {
+  background: var(--rosa-chicle);
+  color: var(--blanco-puro);
+  transform: scale(1.15);
+}
+
+.alergeno.vegano {
+  background: #c2fbd7;
+  color: #22c55e;
+}
+
+.alergeno.vegano:hover {
+  background: #22c55e;
+  color: var(--blanco-puro);
+}
+
+/* INFORMACIÓN ALÉRGENOS */
+.info-alergenos {
+  background: var(--blanco-puro);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--sombra-morada);
+  border-top: 5px solid var(--rojo-vino);
+}
+
+.info-alergenos h2 {
+  font-size: 2rem;
+  color: var(--rojo-vino);
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro-alergenos {
+  text-align: center;
+  color: var(--gris-texto);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alergenos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.alergeno-card {
+  background: var(--rosa-claro);
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.alergeno-card:hover {
+  border-left: 5px solid var(--rojo-vino);
+  transform: translateY(-5px);
+}
+
+.icono-grande {
+  width: 60px;
+  height: 60px;
+  background: var(--rojo-vino);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco-puro);
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+}
+
+.alergeno-card h4 {
+  color: var(--rojo-vino);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.alergeno-card p {
+  color: var(--gris-texto);
+  font-size: 1rem;
+}
+
+/* NOTA IMPORTANTE */
+.nota-importante {
+  background: var(--amarillo-dorado);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.nota-importante i {
+  font-size: 1.5rem;
+  color: var(--negro);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.nota-importante p {
+  color: var(--negro);
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-paletas h1 {
+    font-size: 2.5rem;
+  }
+
+  .paletas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .alergenos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .container-paletas {
+    margin: 6rem auto 2rem;
+    padding: 0 1rem;
+  }
+
+  .hero-paletas h1 {
+    font-size: 2rem;
+  }
+
+  .hero-paletas p {
+    font-size: 1rem;
+  }
+
+  .filtros-container {
+    padding: 1.5rem;
+  }
+
+  .filtros-container h3 {
+    font-size: 1rem;
+  }
+
+  .filtros {
+    gap: 0.5rem;
+  }
+
+  .filtro-btn {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  .paletas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .paleta-img {
+    height: 220px;
+  }
+
+  .info-alergenos {
+    padding: 2rem 1.5rem;
+  }
+
+  .info-alergenos h2 {
+    font-size: 1.7rem;
+    flex-direction: column;
+  }
+
+  .intro-alergenos {
+    font-size: 1rem;
+  }
+
+  .alergenos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .nota-importante {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .hero-paletas h1 {
+    font-size: 1.6rem;
+  }
+
+  .filtros-container {
+    padding: 1.2rem;
+  }
+
+  .filtro-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .paleta-img {
+    height: 200px;
+  }
+
+  .alergenos-grid {
+    grid-template-columns: 1fr;
+  }
+}
