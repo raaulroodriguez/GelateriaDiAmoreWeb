@@ -1,0 +1,56 @@
+{
+  "titulo": "Preguntas Frecuentes",
+  "subtitulo": "Encuentra respuestas a las preguntas más comunes sobre nuestros helados artesanales",
+  "categorias": [
+    {
+      "titulo": "Sobre Nuestros Productos",
+      "icono": "fas fa-ice-cream",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué hace que sus helados sean artesanales?",
+          "respuesta": "Nuestros helados son elaborados diariamente en nuestra propia heladería, utilizando ingredientes frescos y naturales de la más alta calidad. No utilizamos conservantes ni colorantes artificiales, y cada sabor es cuidadosamente preparado siguiendo recetas tradicionales italianas."
+        },
+        {
+          "pregunta": "¿Tienen opciones sin lactosa o veganas?",
+          "respuesta": "Sí, ofrecemos una amplia variedad de helados vegano. También contamos con opciones sin lactosa y sorbetes de frutas naturales 100% veganos. Pregunta en el mostrador por nuestras opciones especiales."
+        },
+        {
+          "pregunta": "¿Con qué frecuencia cambian los sabores?",
+          "respuesta": "Contamos con sabores clásicos disponibles todo el año, como chocolate, vainilla y fresa. Además, cada temporada introducimos sabores especiales que varían según la disponibilidad de frutas de estación y fechas especiales. ¡Síguenos en redes sociales para conocer nuestras novedades!"
+        }
+      ]
+    },
+    {
+      "titulo": "Alergias e Intolerancias",
+      "icono": "fas fa-heartbeat",
+      "preguntas": [
+        {
+          "pregunta": "¿Tienen información sobre alérgenos?",
+          "respuesta": "Sí, toda la información sobre alérgenos está disponible en nuestra tienda y en nuestra carta online. Nuestros productos pueden contener trazas de frutos secos, huevo, leche y gluten. Si tienes alguna alergia específica, consulta con nuestro personal antes de realizar tu pedido."
+        },
+        {
+          "pregunta": "¿Los helados son aptos para celíacos?",
+          "respuesta": "Tenemos varios sabores sin gluten, pero debido a que trabajamos con múltiples ingredientes en el mismo espacio, puede haber contaminación cruzada. Si eres celíaco, te recomendamos consultar con nuestro equipo para conocer las opciones más seguras para ti."
+        }
+      ]
+    },
+    {
+      "titulo": "Sobre Nuestro Local",
+      "icono": "fas fa-store",
+      "preguntas": [
+        {
+          "pregunta": "¿Dónde están ubicados?",
+          "respuesta": "Nos encontramos en C. Granada, N.9, en el corazón de Málaga. Estamos cerca del centro histórico, a pocos minutos a pie de la Catedral."
+        },
+        {
+          "pregunta": "¿Cuál es su horario de atención?",
+          "respuesta": "Nuestro horario varía según la temporada. En verano abrimos de 10:30 a 20:00h, mientras que en primavera e invierno nuestro horario es de 11:00 a 20:00h."
+        },
+        {
+          "pregunta": "¿Aceptan tarjeta de crédito?",
+          "respuesta": "Sí, aceptamos todas las tarjetas de crédito y débito principales (Visa, Mastercard, American Express), así como pagos con móvil (Apple Pay, Google Pay) y efectivo."
+        }
+      ]
+    }
+  ]
+}

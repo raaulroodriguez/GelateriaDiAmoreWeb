@@ -1,0 +1,593 @@
+/* ============================================================
+   TAILWIND CSS v3 — Gelateria Di Amore
+   (Tema definido en tailwind.config.js)
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   PALETA DE COLORES — Variables CSS (compatibilidad)
+   ============================================================ */
+
+:root {
+  --rojo-vino:          #a3405b;
+  --rosa-chicle:        #d3718b;
+  --rosa-claro:         #e8b4cb;
+  --amarillo-dorado:    #cf991b;
+  --amarillo-secundario:#d4af37;
+  --blanco-principal:   #fff9f5;
+  --blanco-secundario:  #f5f0e8;
+  --blanco-suave:       #fff0e7;
+  --blanco-puro:        #f5fffa;
+  --marron:             #6f4e37;
+  --gris-texto:         #333;
+  --negro:              #000;
+  --sombra-morada:      rgba(163, 64, 91, 0.2);
+}
+
+/* ============================================================
+   BASE LAYER
+   ============================================================ */
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply font-body bg-cream text-gris overflow-x-hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+}
+
+/* ============================================================
+   COMPONENTS LAYER — Clases reutilizables
+   ============================================================ */
+
+@layer components {
+
+  /* ------ BOTONES ------ */
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-vino text-white px-6 py-3
+           rounded-pill font-semibold transition-all duration-300
+           hover:bg-vino-dark hover:-translate-y-0.5 active:scale-95 shadow-vino;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center border-2 border-vino text-vino
+           px-6 py-3 rounded-pill font-semibold transition-all duration-300
+           hover:bg-vino hover:text-white;
+  }
+
+  .btn-hero {
+    @apply inline-flex items-center justify-center bg-vino text-white px-8 py-4
+           rounded-pill font-semibold text-lg transition-all duration-300
+           hover:-translate-y-1 hover:shadow-vino-lg shadow-vino;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center border-2 border-white text-white
+           px-6 py-3 rounded-pill font-semibold transition-all duration-300
+           hover:bg-white hover:text-vino;
+  }
+
+  /* ------ BADGES DE CATEGORÍA (usados con [ngClass]="badgeClase") ------ */
+
+  .categoria {
+    @apply absolute top-3 right-3 px-3 py-1 rounded-pill text-xs font-bold
+           uppercase tracking-wide z-10;
+  }
+
+  .categoria.clasico   { @apply bg-vino text-white; }
+  .categoria.sorbete   { @apply bg-rosa text-white; }
+  .categoria.fruta     { @apply bg-rosa text-white; }
+  .categoria.cremoso   { @apply bg-dorado text-white; }
+  .categoria.especial  { @apply bg-dorado text-black; }
+  .categoria.cafe      { @apply bg-marron text-white; }
+  .categoria.granizado { @apply bg-rosa text-white; }
+  .categoria.batido    { @apply bg-dorado text-white; }
+  .categoria.smoothie  { @apply bg-green-500 text-white; }
+  .categoria.frappe    { @apply bg-vino text-white; }
+  .categoria.agua      { @apply bg-sky-500 text-white; }
+
+  /* ------ BADGES STANDALONE ------ */
+
+  .temporada {
+    @apply absolute top-3 left-3 bg-dorado text-white px-3 py-1
+           rounded-pill text-xs font-bold uppercase z-10;
+  }
+
+  .precio {
+    @apply absolute bottom-3 left-3 bg-vino text-white px-3 py-1
+           rounded-pill text-sm font-bold z-10;
+  }
+
+  .badge-especial {
+    @apply absolute bottom-3 right-3 bg-dorado text-black px-3 py-1
+           rounded-pill text-xs font-bold uppercase z-10;
+  }
+
+  /* ------ ALÉRGENOS ------ */
+
+  .alergeno {
+    @apply w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white;
+    background: var(--rojo-vino);
+  }
+
+  .alergeno.vegano { @apply bg-green-500; }
+
+  .alergenos {
+    @apply flex flex-wrap gap-1.5;
+  }
+
+  /* ------ PRODUCT CARD ------ */
+
+  .product-card-wrap {
+    @apply flex flex-col rounded-card-lg overflow-hidden bg-white
+           shadow-vino transition-all duration-300
+           hover:-translate-y-2 hover:shadow-vino-xl h-full;
+  }
+
+  .product-img {
+    @apply relative overflow-hidden;
+    aspect-ratio: 3/2;
+  }
+
+  .product-img img {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .product-card-wrap:hover .product-img img {
+    transform: scale(1.06);
+  }
+
+  .product-info {
+    @apply px-4 py-3 flex flex-col gap-1.5;
+  }
+
+  .product-info h3 {
+    @apply font-display mb-1 text-lg text-vino leading-tight;
+  }
+
+  .descripcion {
+    @apply text-gris text-xs leading-relaxed;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .incluye {
+    @apply flex items-center gap-2 mb-3 text-sm text-gris;
+  }
+
+  .incluye i {
+    @apply text-vino flex-shrink-0;
+  }
+
+  /* ------ SECCIÓN INFO ALÉRGENOS ------ */
+
+  .info-alergenos {
+    @apply bg-cream-pure p-6 md:p-10 rounded-card-lg shadow-vino border-t-4 border-vino mt-8;
+  }
+
+  .info-alergenos h2 {
+    @apply font-display text-2xl md:text-3xl text-vino mb-6 text-center;
+  }
+
+  .intro-alergenos {
+    @apply text-gris text-center mb-8 text-sm md:text-base max-w-2xl mx-auto px-12;
+  }
+
+  .alergenos-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6;
+  }
+
+  .alergeno-card {
+    @apply bg-cream-2 p-5 rounded-xl border-l-4 border-transparent
+           transition-all duration-300 hover:border-vino hover:-translate-y-1 text-center;
+  }
+
+  .alergeno-card h4 {
+    @apply font-display text-vino mb-2 text-lg;
+  }
+
+  .alergeno-card p {
+    @apply text-gris text-sm;
+  }
+
+  .icono-grande {
+    @apply w-14 h-14 bg-vino rounded-full flex items-center justify-center
+           text-white text-2xl mx-auto mb-3;
+  }
+
+  .nota-importante {
+    @apply bg-cream-3 border-l-4 border-dorado p-4 rounded-xl flex gap-3 items-start;
+  }
+
+  .nota-importante i {
+    @apply text-dorado text-xl flex-shrink-0 mt-0.5;
+  }
+
+  .nota-importante p {
+    @apply text-gris text-sm leading-relaxed;
+  }
+
+  /* ------ PÁGINAS LEGALES ------ */
+
+  .main-legal {
+    @apply pt-24 pb-10 px-4 sm:px-6 max-w-4xl mx-auto;
+  }
+
+  .container-legal {
+    @apply bg-cream-pure p-6 md:p-10 rounded-card shadow-vino;
+  }
+
+  .container-legal h1 {
+    @apply font-display text-2xl md:text-4xl text-vino text-center mb-8;
+  }
+
+  .seccion-legal {
+    @apply mb-8;
+  }
+
+  .seccion-legal h2 {
+    @apply font-display text-xl md:text-2xl text-rosa mb-4;
+  }
+
+  .seccion-legal p {
+    @apply text-gris mb-3 text-sm md:text-base leading-relaxed;
+  }
+
+  .seccion-legal ul {
+    @apply ml-6 space-y-2;
+    list-style: disc;
+  }
+
+  .seccion-legal li {
+    @apply text-gris text-sm md:text-base;
+  }
+
+  .seccion-legal a {
+    @apply text-vino underline hover:text-rosa transition-colors;
+  }
+
+  .enlaces-relacionados {
+    @apply flex flex-col sm:flex-row flex-wrap justify-center gap-4 mt-10;
+  }
+
+  .enlaces-relacionados a {
+    @apply bg-vino text-white px-6 py-3 rounded-pill font-semibold text-center
+           transition-all duration-300 hover:bg-rosa hover:-translate-y-1;
+  }
+
+  /* ------ FILTROS ------ */
+
+  .filtro-btn {
+    @apply flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-gris
+           transition-all duration-200 whitespace-nowrap cursor-pointer
+           hover:text-vino;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+  }
+
+  .filtro-btn.active {
+    @apply text-vino;
+    border-bottom-color: theme('colors.vino.DEFAULT');
+  }
+
+  /* ------ SCROLL TO TOP ------ */
+
+  .scroll-top {
+    @apply fixed bottom-6 right-4 w-12 h-12 bg-vino text-white rounded-full
+           flex items-center justify-center shadow-vino-lg transition-all duration-300
+           opacity-0 invisible z-40;
+    transform: translateY(1rem);
+  }
+
+  .scroll-top.show {
+    @apply opacity-100 visible;
+    transform: translateY(0);
+  }
+
+  .scroll-top:hover {
+    @apply bg-vino-dark scale-110;
+  }
+
+  /* ------ DIVISOR ------ */
+
+  .divisor {
+    @apply flex items-center justify-center my-2;
+  }
+
+  .icono-divisor {
+    @apply mx-4 flex-shrink-0;
+  }
+
+  .icono-divisor img {
+    @apply w-8 h-8 object-contain;
+    animation: pulse-heart 2s ease-in-out infinite;
+  }
+
+  /* ------ HEADER ------ */
+
+  .header-nav {
+    @apply fixed top-0 left-0 right-0 z-50 shadow-vino;
+    background: rgba(255, 249, 245, 0.95);
+    backdrop-filter: blur(8px);
+  }
+
+  .header-inner {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between;
+    height: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    .header-inner { height: 5rem; }
+  }
+
+  .header-logo {
+    @apply flex items-center font-display text-vino text-xl md:text-2xl;
+    transition: opacity 0.2s;
+  }
+
+  .header-logo:hover { opacity: 0.8; }
+
+  .header-logo img {
+    @apply object-contain mx-1;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .header-logo img { width: 2.75rem; height: 2.75rem; }
+  }
+
+  .nav-desktop {
+    @apply hidden md:flex items-center gap-6 lg:gap-8;
+  }
+
+  .nav-link-item {
+    @apply text-gris font-medium text-sm lg:text-base transition-colors duration-200;
+  }
+
+  .nav-link-item:hover { color: var(--rojo-vino); }
+
+  .nav-link-item.active-link {
+    @apply text-vino font-semibold;
+  }
+
+  .nav-dropdown-wrap {
+    @apply relative;
+  }
+
+  .nav-dropdown-trigger {
+    @apply flex items-center gap-1 text-gris font-medium text-sm lg:text-base cursor-pointer transition-colors duration-200;
+  }
+
+  .nav-dropdown-trigger:hover { color: var(--rojo-vino); }
+
+  .nav-dropdown-trigger i {
+    @apply text-xs transition-transform duration-200;
+  }
+
+  .nav-dropdown-menu {
+    @apply absolute top-full left-0 mt-2 bg-cream-pure rounded-card py-2 shadow-vino-md z-50;
+    min-width: 12rem;
+    border: 1px solid rgba(232, 180, 203, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: all 0.2s ease;
+  }
+
+  .nav-dropdown-wrap:hover .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-dropdown-wrap:hover .nav-dropdown-trigger i {
+    transform: rotate(180deg);
+  }
+
+  .nav-drop-link {
+    @apply block px-4 py-2.5 text-gris text-sm transition-colors duration-200;
+  }
+
+  .nav-drop-link:hover {
+    color: var(--rojo-vino);
+    background: rgba(232, 180, 203, 0.2);
+  }
+
+  /* Hamburger */
+  .hamburger {
+    @apply md:hidden flex flex-col gap-1.5 p-2 -mr-2;
+  }
+
+  .hamburger span {
+    @apply block w-6 bg-vino transition-all duration-300 origin-center;
+    height: 2px;
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    @apply md:hidden bg-cream-pure overflow-hidden transition-all duration-300;
+    border-top: 1px solid rgba(232, 180, 203, 0.4);
+    max-height: 0;
+  }
+
+  .mobile-menu.open {
+    max-height: 600px;
+  }
+
+  .mobile-menu-inner {
+    @apply px-4 py-4 space-y-1;
+  }
+
+  .mobile-nav-link {
+    @apply block px-4 py-3 text-gris font-medium text-lg rounded-xl transition-colors duration-200;
+  }
+
+  .mobile-nav-link:hover {
+    color: var(--rojo-vino);
+    background: rgba(232, 180, 203, 0.15);
+  }
+
+  .mobile-nav-link.active-link {
+    @apply text-vino font-semibold;
+  }
+
+  .mobile-dropdown-btn {
+    @apply w-full flex items-center justify-between px-4 py-3 text-gris
+           font-medium text-lg rounded-xl transition-colors duration-200;
+    background: none;
+  }
+
+  .mobile-dropdown-btn:hover {
+    color: var(--rojo-vino);
+    background: rgba(232, 180, 203, 0.15);
+  }
+
+  .mobile-dropdown-btn i {
+    @apply text-sm transition-transform duration-200;
+  }
+
+  .mobile-submenu {
+    @apply ml-4 pl-4 space-y-1 mt-1;
+    border-left: 2px solid var(--rosa-claro);
+  }
+
+  .mobile-sub-link {
+    @apply block px-3 py-2.5 text-gris text-base rounded-xl transition-colors duration-200;
+  }
+
+  .mobile-sub-link:hover {
+    color: var(--rojo-vino);
+    background: rgba(232, 180, 203, 0.15);
+  }
+
+  /* ------ FOOTER ------ */
+
+  .site-footer {
+    @apply  mt-auto;
+    border-top: 1px solid rgba(232, 180, 203, 0.5);
+  }
+
+  .footer-grid {
+    @apply max-w-7xl mx-auto px-4 sm:px-2 py-10;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 1024px) {
+    .footer-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .footer-titulo {
+    @apply font-display text-vino text-lg mb-4 text-base;
+  }
+
+  .footer-lista {
+    @apply space-y-1;
+  }
+
+  .footer-lista a {
+    @apply text-gris text-[12px] transition-colors duration-200;
+  }
+
+  .footer-lista a:hover { color: var(--rojo-vino); }
+
+  .rrss-lista {
+    @apply flex flex-wrap gap-7 mt-2;
+  }
+
+  .rrss-lista a img {
+    @apply w-10 h-10 object-contain rounded-lg transition-all duration-300;
+  }
+
+  .rrss-lista a img:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-vino);
+  }
+
+  .footer-bottom {
+    @apply py-4 text-center text-gris text-sm;
+    border-top: 1px solid rgba(232, 180, 203, 0.4);
+  }
+
+}
+
+/* ============================================================
+   DIVISOR — Pseudoelementos (no soportados en @apply)
+   ============================================================ */
+
+.divisor::before,
+.divisor::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e8b4cb);
+}
+
+.divisor::after {
+  background: linear-gradient(to left, transparent, #e8b4cb);
+}
+
+/* ============================================================
+   ANIMACIONES
+   ============================================================ */
+
+@keyframes pulse-heart {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.2); }
+}
+
+@keyframes entrarDerecha {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

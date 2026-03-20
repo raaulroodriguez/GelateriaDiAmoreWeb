@@ -1,0 +1,137 @@
+@if (postresData(); as data) {
+  <main class="pt-20 md:pt-24 pb-16 max-w-7xl mx-auto px-4 sm:px-6">
+
+    <!-- HERO -->
+    <section class="text-center py-10 md:py-14">
+      <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-vino mb-4">{{ 'postres.titulo' | translate }}</h1>
+      <p class="text-gris text-sm md:text-base max-w-2xl mx-auto">{{ 'postres.subtitulo' | translate }}</p>
+    </section>
+
+    <app-divisor />
+
+    <!-- POSTRES GRID -->
+    <section class="my-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for (postre of data.postres; track postre.id) {
+          <app-product-card
+            [imagen]="postre.imagen"
+            [nombre]="postre.nombre"
+            [descripcion]="postre.descripcion"
+            [badgeTexto]="''"
+            [badgeClase]="''"
+            [alergenos]="[]"
+            [precio]="postre.precio"
+            [incluye]="postre.incluye"
+            [especial]="postre.especial"
+            imgHeight="280px" />
+        }
+      </div>
+    </section>
+
+    <app-divisor />
+
+    <!-- PERSONALIZACIÓN -->
+    <section class="mb-12 rounded-card-lg p-6 md:p-10">
+      <h2 class="font-display text-2xl sm:text-3xl text-vino text-center mb-6 md:mb-8 flex items-center justify-center gap-3">
+        <i class="fas fa-magic"></i> {{ 'postres.personaliza_titulo' | translate }}
+      </h2>
+      <p class="text-gris text-sm md:text-base text-center mb-8">{{ 'postres.personaliza_subtitulo' | translate }}</p>
+
+      <!-- CHOCOLATES + SIROPES -->
+      <div class="rounded-card p-6 md:p-8 border-2 border-marron/30 mb-8">
+        <div class="flex items-center justify-center gap-3 mb-1">
+          <i class="fas fa-wand-magic-sparkles text-2xl text-vino"></i>
+          <h3 class="font-display text-xl md:text-2xl text-vino">{{ 'postres.complemento_titulo' | translate }}</h3>
+        </div>
+        <p class="text-gris/40 text-xs text-center font-semibold mb-6">{{ 'postres.complemento_subtitulo' | translate }}</p>
+
+        <!-- Chocolates -->
+        <p class="text-xs font-bold uppercase tracking-widest text-marron mb-3 flex items-center gap-2">
+          <i class="fas fa-droplet"></i> {{ 'postres.chocolates' | translate }}
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 mb-8">
+          @for (chocolate of data.chocolates; track chocolate.id) {
+            <div class="rounded-card p-4 text-center border-2 border-transparent hover:border-vino hover:-translate-y-1 transition-all duration-300 cursor-default">
+              <div class="w-14 h-14 rounded-full overflow-hidden mx-auto mb-2 shadow-md transition-transform duration-300 hover:scale-110 ring-2 ring-cream-2">
+                <img [src]="chocolate.imagen" [alt]="chocolate.nombre" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="text-vino font-semibold text-xs leading-tight block">{{ chocolate.nombre }}</span>
+            </div>
+          }
+        </div>
+
+        <p class="text-xs font-bold uppercase tracking-widest text-marron mb-3 flex items-center gap-2">
+          <i class="fas fa-bottle-droplet"></i> {{ 'postres.siropes' | translate }}
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          @for (sirope of data.siropes; track sirope.id) {
+            <div class="rounded-card p-4 text-center border-2 border-transparent hover:border-vino hover:-translate-y-1 transition-all duration-300 cursor-default">
+              <div class="w-14 h-14 rounded-full overflow-hidden mx-auto mb-2 shadow-md transition-transform duration-300 hover:scale-110 ring-2 ring-cream-2">
+                <img [src]="sirope.imagen" [alt]="sirope.nombre" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="text-vino font-semibold text-xs leading-tight block">{{ sirope.nombre }}</span>
+            </div>
+          }
+        </div>
+
+        <p class="text-xs font-bold uppercase tracking-widest text-marron mt-8 mb-3 flex items-center gap-2">
+          <i class="fas fa-plus"></i> {{ 'postres.otros' | translate }}
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          @for (otro of data.otros; track otro.id) {
+            <div class="rounded-card p-4 text-center border-2 border-transparent hover:border-vino hover:-translate-y-1 transition-all duration-300 cursor-default">
+              <div class="w-14 h-14 rounded-full overflow-hidden mx-auto mb-2 shadow-md transition-transform duration-300 hover:scale-110 ring-2 ring-cream-2">
+                <img [src]="otro.imagen" [alt]="otro.nombre" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="text-vino font-semibold text-xs leading-tight block">{{ otro.nombre }}</span>
+            </div>
+          }
+        </div>
+      </div>
+
+      <!-- EXTRAS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        @for (extra of data.extras; track extra.id) {
+          <div class="rounded-xl p-4 flex justify-between items-center border-2 border-rosa-light hover:border-vino hover:-translate-y-1 transition-all duration-300">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <i [class]="extra.icono + ' text-vino text-lg'"></i>
+                <h3 class="font-display text-base text-vino">{{ extra.nombre }}</h3>
+                <span class="ml-auto bg-vino text-cream-pure text-xs font-bold px-3 py-1 rounded-pill">{{ extra.precio }}</span>
+              </div>
+              <p class="text-gris text-sm mt-3">{{ extra.descripcion }}</p>
+              @if (extra.nota) {
+                <div class="mt-1  rounded-lg p-2 flex items-start gap-2">
+                  <i class="fas fa-info-circle text-vino text-sm shrink-0"></i>
+                  <span class="text-gris text-xs">{{ extra.nota }}</span>
+                </div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+
+    <app-divisor />
+
+    <!-- COMBINACIONES POPULARES -->
+    <section class="mb-12">
+      <h2 class="font-display text-2xl sm:text-3xl text-vino text-center mb-6 md:mb-8 flex items-center justify-center gap-3">
+        <i class="fas fa-star"></i> {{ 'postres.combinaciones_titulo' | translate }}
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for (combo of data.combinaciones; track combo.id) {
+          <div class="bg-cream-pure rounded-card p-6 text-center shadow-vino hover:-translate-y-2 transition-all duration-300">
+            <div class="w-14 h-14 bg-dorado rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-heart text-cream-pure text-xl"></i>
+            </div>
+            <h4 class="font-display text-lg text-vino mb-2">{{ combo.nombre }}</h4>
+            <p class="text-gris text-sm mb-4">{{ combo.descripcion }}</p>
+            <span class="inline-block bg-vino text-cream-pure text-sm font-bold px-5 py-2 rounded-pill">{{ combo.precio }}</span>
+          </div>
+        }
+      </div>
+    </section>
+
+  </main>
+}

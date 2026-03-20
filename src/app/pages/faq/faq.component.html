@@ -1,0 +1,37 @@
+@if (faqData(); as data) {
+  <main class="pt-20 md:pt-24 pb-16 max-w-3xl mx-auto px-4 sm:px-6">
+
+    <!-- TITLE -->
+    <div class="text-center py-10">
+      <h1 class="font-display text-3xl sm:text-4xl text-vino text-center mb-4">{{ data.titulo }}</h1>
+      <p class="text-gris text-center text-sm md:text-base">{{ data.subtitulo }}</p>
+    </div>
+
+    <app-divisor />
+
+    <!-- CATEGORÍAS -->
+    @for (categoria of data.categorias; track categoria.titulo) {
+      <section class="mb-10 mt-8">
+
+        <h2 class="font-display text-xl md:text-2xl text-vino mb-4 flex items-center gap-3 pb-2 border-b-2 border-rosa-light">
+          <i [class]="categoria.icono + ' text-rosa'"></i>
+          {{ categoria.titulo }}
+        </h2>
+
+        @for (pregunta of categoria.preguntas; track pregunta.pregunta) {
+          <details class="faq-item bg-cream-pure border-2 border-rosa-light rounded-xl mb-3 overflow-hidden transition-all duration-300 hover:border-rosa hover:shadow-vino">
+            <summary class="flex justify-between items-center px-5 py-4 font-semibold text-vino cursor-pointer list-none text-sm md:text-base">
+              {{ pregunta.pregunta }}
+              <i class="fas fa-chevron-down text-rosa faq-chevron transition-transform duration-300 ml-3 shrink-0"></i>
+            </summary>
+            <div class="px-5 pb-4 text-gris text-sm leading-relaxed">
+              <p>{{ pregunta.respuesta }}</p>
+            </div>
+          </details>
+        }
+
+      </section>
+    }
+
+  </main>
+}

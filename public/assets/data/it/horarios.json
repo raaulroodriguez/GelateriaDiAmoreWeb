@@ -1,0 +1,56 @@
+{
+  "titulo": "Quando Siamo Aperti per Voi?",
+  "subtitulo": "Che piacere averti qui! Siamo aperti 365 giorni all'anno, perché il buon gelato non conosce calendari",
+  "temporadas": [
+    {
+      "id": "verano",
+      "nombre": "Estate",
+      "meses": "Giugno - Agosto",
+      "clase": "verano",
+      "tipo": "circulo",
+      "horarios": [
+        { "dias": "Tutti i giorni", "horas": "10:30 - 02:00" }
+      ]
+    },
+    {
+      "id": "primavera",
+      "nombre": "Primavera",
+      "meses": "Marzo - Maggio",
+      "clase": "",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Lun - Gio", "horas": "11:00 - 01:00" },
+        { "dias": "Ven - Sab", "horas": "11:00 - 02:00" },
+        { "dias": "Domenica", "horas": "11:00 - 01:00" }
+      ]
+    },
+    {
+      "id": "otono",
+      "nombre": "Autunno",
+      "meses": "Ottobre - Novembre",
+      "clase": "otono",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Lun - Gio", "horas": "11:00 - 00:00" },
+        { "dias": "Ven - Sab", "horas": "11:00 - 01:00" },
+        { "dias": "Domenica", "horas": "11:00 - 00:00" }
+      ]
+    },
+    {
+      "id": "invierno",
+      "nombre": "Inverno",
+      "meses": "Dicembre - Febbraio",
+      "clase": "invierno",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Lun - Gio", "horas": "11:00 - 01:00" },
+        { "dias": "Ven - Sab", "horas": "11:00 - 02:00" },
+        { "dias": "Domenica", "horas": "11:00 - 01:00" }
+      ]
+    }
+  ],
+  "infoEspecial": [
+    { "titulo": "Giorni Festivi", "descripcion": "Aperto in tutti i giorni festivi con orario stagionale" },
+    { "titulo": "Natale e Capodanno", "descripcion": "Consulta gli orari speciali sui nostri social media" }
+  ]
+}

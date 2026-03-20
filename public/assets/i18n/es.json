@@ -1,0 +1,56 @@
+{
+  "nav.inicio": "Inicio",
+  "nav.sabores": "Sabores",
+  "nav.helados": "Helados",
+  "nav.paletas": "Paletas",
+  "nav.bebidas": "Bebidas",
+  "nav.postres": "Postres",
+  "nav.nosotros": "Nosotros",
+  "nav.ubicacion": "Ubicación",
+  "nav.horario": "Horario",
+  "nav.faq": "Preguntas Frecuentes",
+  "nav.contacto": "Contacto",
+  "nav.menu_aria": "Menú",
+
+  "footer.aviso_legal": "Aviso Legal",
+  "footer.condiciones": "Condiciones de Uso",
+  "footer.privacidad": "Política de Privacidad",
+  "footer.cookies": "Preferencias de cookies",
+  "footer.sobre": "Sobre Gelateria Di Amore",
+  "footer.nuestros_productos": "Nuestros Productos",
+  "footer.donde": "¿Dónde nos encontramos?",
+  "footer.opinion": "Vuestra opinión nos importa",
+  "footer.ayuda": "Ayuda",
+  "footer.faq": "Preguntas Frecuentes",
+  "footer.atencion": "Atención al cliente",
+  "footer.trabaja": "Trabaja Con Nosotros",
+  "footer.rrss": "Redes Sociales",
+
+  "home.productos_titulo": "Nuestros Productos",
+  "home.especiales_titulo": "¿Qué nos hace especiales?",
+
+  "helados.titulo": "Nuestros Sabores Artesanales",
+  "helados.subtitulo": "Cada helado es elaborado diariamente con ingredientes frescos y naturales, siguiendo recetas tradicionales italianas",
+
+  "paletas.titulo": "Nuestras Paletas Artesanales",
+  "paletas.subtitulo": "Paletas elaboradas con frutas frescas y cremas naturales, congeladas al momento para preservar todo su sabor",
+
+  "bebidas.titulo": "Nuestras Bebidas Especiales",
+  "bebidas.subtitulo": "Refrescantes bebidas artesanales elaboradas con ingredientes naturales, perfectas para acompañar tus helados favoritos",
+  "bebidas.personaliza_titulo": "¿Cómo personalizas tu bebida?",
+
+  "postres.titulo": "Nuestros Postres Calientes",
+  "postres.subtitulo": "Creaciones únicas que combinan postres con los mejores ingredientes para una experiencia irrepetible",
+  "postres.personaliza_titulo": "Personaliza tu Postre",
+  "postres.personaliza_subtitulo": "Elige entre nuestras opciones para crear tu combinación perfecta",
+  "postres.complemento_titulo": "Elige tu Complemento",
+  "postres.complemento_subtitulo": "Incluido con tu postre",
+  "postres.chocolates": "Chocolates",
+  "postres.siropes": "Siropes",
+  "postres.otros": "Otros",
+  "postres.combinaciones_titulo": "Combinaciones Populares",
+
+  "ubicacion.titulo": "Encuéntranos en el corazón de Málaga",
+  "ubicacion.direccion": "Calle Granada Nº9, Distrito Centro, 29015 Málaga",
+  "ubicacion.horarios_btn": "Horarios"
+}

@@ -1,0 +1,92 @@
+<header class="header-nav">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a routerLink="/" class="header-logo">
+      <span>Gelateria Di Am</span>
+      <img src="assets/img/corazon.png" alt="logo-gda" />
+      <span>re</span>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="nav-desktop">
+      @for (item of navItems(); track item.label; let i = $index) {
+        @if (item.href !== null) {
+          <a
+            class="nav-link-item"
+            [routerLink]="item.href"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: item.href === '/'}"
+            (click)="closeMenu()">
+            {{ item.label | translate }}
+          </a>
+        } @else {
+          <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-trigger" (click)="toggleDropdown(i, $event)">
+              {{ item.label | translate }}
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="nav-dropdown-menu">
+              @for (child of item.children; track child.label) {
+                <a
+                  class="nav-drop-link"
+                  [routerLink]="child.href"
+                  (click)="closeMenu()">
+                  {{ child.label | translate }}
+                </a>
+              }
+            </div>
+          </div>
+        }
+      }
+    </nav>
+
+    <!-- Language selector (always visible, desktop + mobile) -->
+    <app-language-selector class="flex items-center ml-2" />
+
+    <!-- Hamburger button (mobile only) -->
+    <button class="hamburger" [attr.aria-label]="'nav.menu_aria' | translate" (click)="toggleMenu()">
+      <span [ngClass]="{'rotate-45': menuOpen(), 'translate-y-2': menuOpen()}"></span>
+      <span [ngClass]="{'opacity-0': menuOpen()}"></span>
+      <span [ngClass]="{'-rotate-45': menuOpen(), '-translate-y-2': menuOpen()}"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" [class.open]="menuOpen()">
+    <div class="mobile-menu-inner">
+      @for (item of navItems(); track item.label; let i = $index) {
+        @if (item.href !== null) {
+          <a
+            class="mobile-nav-link"
+            [routerLink]="item.href"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: item.href === '/'}"
+            (click)="closeMenu()">
+            {{ item.label | translate }}
+          </a>
+        } @else {
+          <button class="mobile-dropdown-btn" (click)="toggleDropdown(i, $event)">
+            {{ item.label | translate }}
+            <i class="fa-solid fa-chevron-down" [class.rotate-180]="activeDropdown() === i"></i>
+          </button>
+          @if (activeDropdown() === i) {
+            <div class="mobile-submenu">
+              @for (child of item.children; track child.label) {
+                <a
+                  class="mobile-sub-link"
+                  [routerLink]="child.href"
+                  (click)="closeMenu()">
+                  {{ child.label | translate }}
+                </a>
+              }
+            </div>
+          }
+        }
+      }
+
+    </div>
+  </div>
+
+</header>

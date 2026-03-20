@@ -1,0 +1,56 @@
+{
+  "titulo": "Domande Frequenti",
+  "subtitulo": "Trova risposta alle domande più comuni sui nostri gelati artigianali",
+  "categorias": [
+    {
+      "titulo": "Sui Nostri Prodotti",
+      "icono": "fas fa-ice-cream",
+      "preguntas": [
+        {
+          "pregunta": "Cosa rende i vostri gelati artigianali?",
+          "respuesta": "I nostri gelati vengono preparati quotidianamente nella nostra gelateria, utilizzando ingredienti freschi e naturali della massima qualità. Non utilizziamo conservanti né coloranti artificiali, e ogni gusto è preparato con cura seguendo le ricette tradizionali italiane."
+        },
+        {
+          "pregunta": "Avete opzioni senza lattosio o vegane?",
+          "respuesta": "Sì, offriamo un'ampia varietà di gelati vegani. Abbiamo anche opzioni senza lattosio e sorbetti di frutta naturale 100% vegani. Chiedi al bancone le nostre opzioni speciali."
+        },
+        {
+          "pregunta": "Con quale frequenza cambiate i gusti?",
+          "respuesta": "Abbiamo gusti classici disponibili tutto l'anno, come cioccolato, vaniglia e fragola. Inoltre, ogni stagione introduciamo gusti speciali che variano in base alla disponibilità di frutta di stagione e occasioni speciali. Seguici sui social media per scoprire le nostre novità!"
+        }
+      ]
+    },
+    {
+      "titulo": "Allergie e Intolleranze",
+      "icono": "fas fa-heartbeat",
+      "preguntas": [
+        {
+          "pregunta": "Avete informazioni sugli allergeni?",
+          "respuesta": "Sì, tutte le informazioni sugli allergeni sono disponibili nel nostro negozio e nel nostro menu online. I nostri prodotti possono contenere tracce di frutta secca, uova, latte e glutine. Se hai un'allergia specifica, consulta il nostro personale prima di effettuare l'ordine."
+        },
+        {
+          "pregunta": "I gelati sono adatti ai celiaci?",
+          "respuesta": "Abbiamo diversi gusti senza glutine, ma poiché lavoriamo con più ingredienti nello stesso spazio, può esserci contaminazione crociata. Se sei celiaco, ti consigliamo di consultare il nostro team per conoscere le opzioni più sicure per te."
+        }
+      ]
+    },
+    {
+      "titulo": "Sul Nostro Locale",
+      "icono": "fas fa-store",
+      "preguntas": [
+        {
+          "pregunta": "Dove siete situati?",
+          "respuesta": "Ci troviamo in C. Granada, N.9, nel cuore di Málaga. Siamo vicini al centro storico, a pochi minuti a piedi dalla Cattedrale."
+        },
+        {
+          "pregunta": "Quali sono i vostri orari di apertura?",
+          "respuesta": "I nostri orari variano a seconda della stagione. In estate apriamo dalle 10:30 alle 20:00, mentre in primavera e inverno il nostro orario è dalle 11:00 alle 20:00."
+        },
+        {
+          "pregunta": "Accettate carte di credito?",
+          "respuesta": "Sì, accettiamo tutte le principali carte di credito e debito (Visa, Mastercard, American Express), oltre ai pagamenti con cellulare (Apple Pay, Google Pay) e contanti."
+        }
+      ]
+    }
+  ]
+}

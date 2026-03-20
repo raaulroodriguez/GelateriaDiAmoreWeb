@@ -1,0 +1,32 @@
+{
+  "bebidas": [
+    { "id": 1, "nombre": "Take Away Coffee", "descripcion": "Freshly brewed coffee to go, perfect for any time of day", "imagen": "assets/img/bebidas.png", "tipo": "cafe", "badgeTexto": "Coffee", "badgeClase": "cafe" },
+    { "id": 2, "nombre": "Strawberry Granita", "descripcion": "Refreshing granita made from natural strawberries", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 3, "nombre": "Lemon Granita", "descripcion": "Classic lemon granita", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 4, "nombre": "Tropical Granita", "descripcion": "Exotic blend of tropical flavours", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 5, "nombre": "Coffee Granita", "descripcion": "Intense coffee granita for coffee lovers", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 6, "nombre": "Ice Cream Milkshake", "descripcion": "Choose your favourite ice cream flavour or combine up to 2 flavours", "imagen": "assets/img/bebidas.png", "tipo": "batido", "badgeTexto": "Milkshake", "badgeClase": "batido" },
+    { "id": 7, "nombre": "Fruit Smoothies", "descripcion": "Natural smoothies made with our fruit ice pops. Combine up to 2 flavours", "imagen": "assets/img/bebidas.png", "tipo": "smoothie", "badgeTexto": "Smoothie", "badgeClase": "smoothie" },
+    { "id": 8, "nombre": "Coffee Frappé", "descripcion": "Coffee base with coffee ice cream, blended to achieve a perfect texture", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 9, "nombre": "Coffee & Vanilla Frappé", "descripcion": "Coffee base with coffee and vanilla ice cream for a smoother flavour", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 10, "nombre": "Still Mineral Water", "descripcion": "Natural mineral water. Available in small and large sizes", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Water", "badgeClase": "agua" },
+    { "id": 11, "nombre": "Sparkling Water", "descripcion": "Sparkling mineral water. Available in small size", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Water", "badgeClase": "agua" }
+  ],
+  "personalizacion": [
+    {
+      "icono": "fas fa-blender",
+      "titulo": "Customise Your Drink",
+      "contenido": [
+        { "label": "Milkshakes", "texto": "Choose any flavour of our ice creams or combine up to 2 different flavours to create your perfect milkshake." },
+        { "label": "Smoothies", "texto": "Select from our fresh fruit flavours: Strawberry, Mango, Mixed Berries, Lemon, Pineapple, Watermelon. Mix up to 2 flavours!" }
+      ]
+    },
+    {
+      "icono": "fas fa-coffee",
+      "titulo": "Artisan Frappés",
+      "contenido": [
+        { "label": "", "texto": "Our frappés are made with quality Italian espresso coffee and artisan ice cream. Choose between our classic version with coffee ice cream or the smoother one with vanilla." }
+      ]
+    }
+  ]
+}

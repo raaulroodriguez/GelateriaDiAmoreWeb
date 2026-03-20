@@ -1,0 +1,37 @@
+{
+  "postres": [
+    { "id": 1, "nombre": "Gofre", "descripcion": "Crujiente gofre caliente con tu chocolate favorito", "imagen": "assets/img/bubble.png", "precio": "4,50€", "incluye": "Incluye chocolate a elegir", "destacado": false, "especial": false },
+    { "id": 2, "nombre": "Crepe", "descripcion": "Suave crepe con el chocolate que prefieras", "imagen": "assets/img/bubble.png", "precio": "4,50€", "incluye": "Incluye chocolate a elegir", "destacado": false, "especial": false },
+    { "id": 3, "nombre": "Tortitas", "descripcion": "2 esponjosas tortitas americanas con nata y chocolate", "imagen": "assets/img/bubble.png", "precio": "5,00€", "incluye": "Incluye nata y chocolate a elegir", "destacado": false, "especial": false },
+    { "id": 4, "nombre": "Bubble Waffle", "descripcion": "Waffle en forma de cono, crujiente por fuera y suave por dentro", "imagen": "assets/img/bubble.png", "precio": "5,00€", "incluye": "Incluye nata y chocolate a elegir", "destacado": true, "especial": true }
+  ],
+  "chocolates": [
+    { "id": 1, "nombre": "Nutella", "imagen": "https://images.unsplash.com/photo-1519420573924-65fcd45245f8?w=96&h=96&fit=crop&crop=center&auto=format&q=80" },
+    { "id": 2, "nombre": "Kinder", "imagen": "assets/img/kinder.jpg" },
+    { "id": 3, "nombre": "Lotus", "imagen": "assets/img/lotusSirope.png" },
+    { "id": 4, "nombre": "Con Leche", "imagen": "assets/img/leche.jpg" },
+    { "id": 5, "nombre": "Blanco", "imagen": "assets/img/blanco.jpg" },
+    { "id": 6, "nombre": "Negro", "imagen": "assets/img/negro.jpg" },
+    { "id": 7, "nombre": "Negro con Avellanas", "imagen": "assets/img/negroAvellanas.jpg" }
+  ],
+  "siropes": [
+    { "id": 1, "nombre": "Dulce de Leche", "imagen": "assets/img/dulceLeche.jpg" },
+    { "id": 2, "nombre": "Caramelo", "imagen": "assets/img/caramelo.jpg" },
+    { "id": 3, "nombre": "Sirope de Vainilla", "imagen": "https://images.unsplash.com/photo-1592788174877-3f99727fd23d?w=96&h=96&fit=crop&crop=center&auto=format&q=80" },
+    { "id": 4, "nombre": "Sirope de Fresa", "imagen": "assets/img/fresas.jpg" }
+  ],
+  "otros": [
+    { "id": 1, "nombre": "Azúcar Glass", "imagen": "https://images.unsplash.com/photo-1710857389305-5cba9211033f?w=96&h=96&fit=crop&crop=center&auto=format&q=80" },
+    { "id": 2, "nombre": "Canela", "imagen": "https://images.unsplash.com/photo-1622798337764-259682f03741?w=96&h=96&fit=crop&crop=center&auto=format&q=80" }
+  ],
+  "extras": [
+    { "id": 1, "nombre": "Bola de Helado", "precio": "+2,00€", "descripcion": "Añade una bola de cualquiera de nuestros sabores de helado", "nota": "Combina perfectamente con cualquier postre", "icono": "fas fa-ice-cream" },
+    { "id": 2, "nombre": "Topping Extra", "precio": "+0,50€", "descripcion": "Añade toppings para hacer tu postre aún más especial", "nota": "Sirope, virutas, frutos secos y más", "icono": "fas fa-candy-cane" }
+  ],
+  "combinaciones": [
+    { "id": 1, "nombre": "La Confiable", "descripcion": "Gofre con Nutella + Bola de helado de Kinder", "precio": "6,50€" },
+    { "id": 2, "nombre": "Pasión del Chocolate", "descripcion": "Crepe con Kinder + Bola de helado de Chocolate", "precio": "6,50€" },
+    { "id": 3, "nombre": "Capricho crujiente", "descripcion": "Bubble Waffle con Lotus + Helado de Lotus + Topping", "precio": "7,50€" },
+    { "id": 4, "nombre": "Desayuno Premium", "descripcion": "Tortitas con Nata y Chocolate Blanco + Helado de Vainilla", "precio": "7€" }
+  ]
+}

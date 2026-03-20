@@ -1,0 +1,281 @@
+<main class="pt-20 md:pt-24 pb-16 max-w-6xl mx-auto px-4 sm:px-6">
+
+  <!-- TÍTULO -->
+  <div class="text-center py-8 md:py-12">
+    <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-vino mb-4">Trabaja con nosotros</h1>
+    <p class="text-gris text-sm md:text-base max-w-xl mx-auto">¿Te apasiona el mundo del helado artesanal? Únete a nuestra familia y forma parte de la experiencia Gelateria Di Amore</p>
+  </div>
+
+  <app-divisor />
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+    <!-- FORMULARIO -->
+    <div class="lg:col-span-2">
+      <form class="bg-cream-pure rounded-card-lg shadow-vino p-6 md:p-8" (ngSubmit)="onSubmit()" #trabajaForm="ngForm">
+        <h2 class="font-display text-xl md:text-2xl text-vino mb-6 flex items-center gap-2 justify-center">
+          <i class="fas fa-ice-cream"></i> Envíanos tu candidatura
+        </h2>
+        <p class="text-gris text-sm text-center mb-6">Revisaremos tu solicitud y nos pondremos en contacto contigo</p>
+
+        <div class="mb-5">
+          <label for="nombre" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-user"></i> Nombre completo
+          </label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            [(ngModel)]="formData.nombre"
+            placeholder="Tu nombre completo"
+            required
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="email" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-envelope"></i> Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="formData.email"
+            placeholder="tu@email.com"
+            required
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="telefono" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-phone"></i> Teléfono
+          </label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            [(ngModel)]="formData.telefono"
+            placeholder="+34 600 000 000"
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="puesto" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-briefcase"></i> Puesto deseado
+          </label>
+          <select
+            id="puesto"
+            name="puesto"
+            [(ngModel)]="formData.puesto"
+            required
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors"
+          >
+            <option value="">Selecciona un puesto</option>
+            <option value="heladero">Heladero/a Artesanal</option>
+            <option value="dependiente">Dependiente/a</option>
+            <option value="encargado">Encargado/a de Tienda</option>
+            <option value="practicas">Prácticas</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="mb-5">
+          <label for="edad" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-birthday-cake"></i> Edad
+          </label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            [(ngModel)]="formData.edad"
+            placeholder="Tu edad"
+            min="16"
+            max="99"
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="disponibilidad" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-calendar-check"></i> Disponibilidad
+          </label>
+          <select
+            id="disponibilidad"
+            name="disponibilidad"
+            [(ngModel)]="formData.disponibilidad"
+            required
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors"
+          >
+            <option value="">Selecciona tu disponibilidad</option>
+            <option value="completa">Jornada completa</option>
+            <option value="parcial">Jornada parcial</option>
+            <option value="fines">Fines de semana</option>
+            <option value="verano">Solo verano</option>
+          </select>
+        </div>
+
+        <div class="mb-5">
+          <label for="experiencia" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-star"></i> Experiencia previa
+          </label>
+          <textarea
+            id="experiencia"
+            name="experiencia"
+            [(ngModel)]="formData.experiencia"
+            placeholder="Cuéntanos tu experiencia en hostelería, heladería u otros trabajos relacionados..."
+            rows="4"
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors resize-none"
+          ></textarea>
+        </div>
+
+        <div class="mb-5">
+          <label for="cv" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-file-alt"></i> Currículum (CV)
+          </label>
+          <input
+            type="file"
+            id="cv"
+            name="cv"
+            accept=".pdf,.doc,.docx"
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light text-sm text-gris cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-pill file:border-0 file:bg-vino file:text-white file:font-semibold hover:file:bg-vino-dark transition-colors"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="motivacion" class="block font-semibold text-vino mb-2 text-sm">
+            <i class="fas fa-heart"></i> Carta de motivación
+          </label>
+          <textarea
+            id="motivacion"
+            name="motivacion"
+            [(ngModel)]="formData.motivacion"
+            placeholder="¿Por qué quieres trabajar en Gelateria Di Amore? ¿Qué puedes aportarnos?"
+            rows="5"
+            class="w-full px-4 py-3 rounded-xl border-2 border-rosa-light focus:border-vino focus:outline-none text-gris text-sm bg-cream transition-colors resize-none"
+          ></textarea>
+        </div>
+
+        <div class="flex gap-4 flex-col sm:flex-row mt-6">
+          <button type="submit" class="btn-primary flex-1">
+            <i class="fas fa-paper-plane"></i> Enviar candidatura
+          </button>
+          <button type="reset" class="btn-secondary flex-1">
+            <i class="fas fa-undo"></i> Limpiar
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- INFO COLUMNA -->
+    <div class="space-y-4">
+
+      <!-- ¿Por qué elegirnos? -->
+      <div class="bg-cream-pure rounded-card shadow-vino p-5 hover:-translate-y-1 transition-all duration-300">
+        <h2 class="font-display text-lg text-vino mb-3 flex items-center gap-2">
+          <i class="fas fa-users"></i> ¿Por qué elegirnos?
+        </h2>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Formación continua</span>
+              <span>Aprenderás el arte del helado artesanal italiano</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Buen ambiente</span>
+              <span>Equipo familiar y ambiente cálido</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Crecimiento</span>
+              <span>Posibilidades de desarrollo profesional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Requisitos generales -->
+      <div class="bg-cream-pure rounded-card shadow-vino p-5 hover:-translate-y-1 transition-all duration-300">
+        <h2 class="font-display text-lg text-vino mb-3 flex items-center gap-2">
+          <i class="fas fa-clipboard-list"></i> Requisitos generales
+        </h2>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Actitud positiva</span>
+              <span>Ganas de trabajar y aprender</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Orientación al cliente</span>
+              <span>Habilidades de atención al público</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Puntualidad</span>
+              <span>Responsabilidad y compromiso</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dónde estamos -->
+      <div class="bg-cream-pure rounded-card shadow-vino p-5 hover:-translate-y-1 transition-all duration-300">
+        <h2 class="font-display text-lg text-vino mb-3 flex items-center gap-2">
+          <i class="fas fa-map-marker-alt"></i> Dónde estamos
+        </h2>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Gelateria Di Amore</span>
+              <span>C. Granada, N.9, Málaga</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-gris">
+            <div class="w-10 h-10 bg-vino rounded-full flex items-center justify-center text-white flex-shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-vino text-xs">Email de RRHH</span>
+              <a href="mailto:gelateriadiamore@gmail.com" class="text-vino hover:text-gris transition-colors font-semibold">gelateriadiamore&#64;gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <app-divisor />
+
+</main>

@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "titulo1": "Gelateria Di Am",
+    "titulo2": "re",
+    "subtitulo": "L'autentico sapore italiano in ogni cucchiaiata",
+    "botonTexto": "Vienici a trovare",
+    "botonLink": "/ubicacion",
+    "video": "assets/video/video1.mp4"
+  },
+  "pasion": {
+    "titulo": "La Nostra Passione",
+    "texto": "Dal 2013, ci dedichiamo a dolcificare i momenti speciali dei nostri clienti.\n\nOgni gelato viene preparato quotidianamente, garantendo freschezza e sapore ineguagliabili.\n\nPerché crediamo che i migliori ricordi si creino con i migliori sapori."
+  },
+  "productos": [
+    {
+      "titulo": "Gelato Italiano",
+      "descripcion": "Oltre 20 gusti cremosi preparati ogni giorno con ingredienti freschi e autentiche ricette italiane.\n\nDai classici come pistacchio e stracciatella a gusti unici.",
+      "imagen": "assets/img/lotus.jpeg",
+      "botonTexto": "Scopri i nostri gusti",
+      "botonLink": "/helados"
+    },
+    {
+      "titulo": "Ghiaccioli",
+      "descripcion": "Ghiaccioli alla frutta 100% naturali senza zuccheri aggiunti, perfetti per chi ama il sano, o i nostri irresistibili ghiaccioli cremosi con texture morbide.\n\nFreschezza garantita ad ogni morso.",
+      "imagen": "assets/img/polo3.png",
+      "botonTexto": "Vedi varietà",
+      "botonLink": "/paletas"
+    },
+    {
+      "titulo": "Bevande Rinfrescanti",
+      "descripcion": "Frullati cremosi, smoothie con frutta naturale, granite italiane rinfrescanti, frappé al caffè preparato fresco.\n\nLa combinazione perfetta per accompagnare il tuo gelato o da gustare da soli.",
+      "imagen": "assets/img/bebidas.png",
+      "botonTexto": "Esplora le bevande",
+      "botonLink": "/bebidas"
+    },
+    {
+      "titulo": "Dolci Caldi",
+      "descripcion": "Bubble Waffle artigianali soffici, crêpe sottili ripiene di Nutella o cioccolata calda, waffle dorati e pancake soffici.\n\nTutti personalizzabili con i tuoi topping preferiti.",
+      "imagen": "assets/img/bubble.png",
+      "botonTexto": "Vedi dolci",
+      "botonLink": "/postres"
+    }
+  ],
+  "caracteristicas": [
+    {
+      "titulo": "Ingredienti di Alta Qualità",
+      "descripcion": "Selezioniamo con cura frutta fresca, paste della massima qualità, frutta secca e i migliori prodotti italiani."
+    },
+    {
+      "titulo": "Ricette Tradizionali",
+      "descripcion": "Utilizziamo metodi artigianali italiani tramandati di generazione in generazione."
+    },
+    {
+      "titulo": "Innovazione Costante",
+      "descripcion": "Ogni stagione creiamo nuovi gusti sorprendenti che conquistano i palati."
+    },
+    {
+      "titulo": "Per Tutti",
+      "descripcion": "Offriamo opzioni senza lattosio, senza glutine e vegane, perché tutti meritano di godersi il gelato."
+    }
+  ],
+  "ubicacion": {
+    "titulo": "Vi aspettiamo nel Cuore di Málaga!",
+    "subtitulo": "Aperti tutti i giorni dell'anno",
+    "botonTexto": "Come arrivare",
+    "botonLink": "/ubicacion",
+    "mapaUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.03779276423!2d-4.423870423425326!3d36.72165357212215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f744121652d3%3A0x8abd8bc55ad31f77!2sGELATERIA%20DI%20AMORE!5e0!3m2!1ses!2ses!4v1761810614462!5m2!1ses!2ses",
+    "direccion": "C. Granada, N.9, Málaga"
+  }
+}

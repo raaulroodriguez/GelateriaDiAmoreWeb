@@ -1,0 +1,56 @@
+{
+  "titulo": "Questions Fréquemment Posées",
+  "subtitulo": "Trouvez des réponses aux questions les plus courantes sur nos glaces artisanales",
+  "categorias": [
+    {
+      "titulo": "Sur Nos Produits",
+      "icono": "fas fa-ice-cream",
+      "preguntas": [
+        {
+          "pregunta": "Qu'est-ce qui rend vos glaces artisanales ?",
+          "respuesta": "Nos glaces sont préparées quotidiennement dans notre propre gelateria, en utilisant des ingrédients frais et naturels de la plus haute qualité. Nous n'utilisons ni conservateurs ni colorants artificiels, et chaque parfum est soigneusement préparé selon des recettes italiennes traditionnelles."
+        },
+        {
+          "pregunta": "Avez-vous des options sans lactose ou véganes ?",
+          "respuesta": "Oui, nous offrons une large variété de glaces véganes. Nous avons également des options sans lactose et des sorbets aux fruits naturels 100% véganes. Demandez au comptoir nos options spéciales."
+        },
+        {
+          "pregunta": "À quelle fréquence changez-vous les parfums ?",
+          "respuesta": "Nous avons des parfums classiques disponibles toute l'année, comme le chocolat, la vanille et la fraise. De plus, chaque saison nous introduisons des parfums spéciaux qui varient en fonction de la disponibilité des fruits de saison et des occasions spéciales. Suivez-nous sur les réseaux sociaux pour découvrir nos nouveautés !"
+        }
+      ]
+    },
+    {
+      "titulo": "Allergies et Intolérances",
+      "icono": "fas fa-heartbeat",
+      "preguntas": [
+        {
+          "pregunta": "Avez-vous des informations sur les allergènes ?",
+          "respuesta": "Oui, toutes les informations sur les allergènes sont disponibles dans notre boutique et sur notre menu en ligne. Nos produits peuvent contenir des traces de fruits à coque, d'œufs, de lait et de gluten. Si vous avez une allergie spécifique, veuillez consulter notre personnel avant de passer votre commande."
+        },
+        {
+          "pregunta": "Les glaces sont-elles adaptées aux cœliaques ?",
+          "respuesta": "Nous avons plusieurs parfums sans gluten, mais puisque nous travaillons avec plusieurs ingrédients dans le même espace, il peut y avoir une contamination croisée. Si vous êtes cœliaque, nous vous recommandons de consulter notre équipe pour connaître les options les plus sûres pour vous."
+        }
+      ]
+    },
+    {
+      "titulo": "Sur Notre Boutique",
+      "icono": "fas fa-store",
+      "preguntas": [
+        {
+          "pregunta": "Où êtes-vous situés ?",
+          "respuesta": "Nous sommes situés au C. Granada, N.9, au cœur de Málaga. Nous sommes près du centre historique, à quelques minutes à pied de la Cathédrale."
+        },
+        {
+          "pregunta": "Quels sont vos horaires d'ouverture ?",
+          "respuesta": "Nos horaires varient selon la saison. En été nous ouvrons de 10h30 à 20h00, tandis qu'au printemps et en hiver nos horaires sont de 11h00 à 20h00."
+        },
+        {
+          "pregunta": "Acceptez-vous les cartes de crédit ?",
+          "respuesta": "Oui, nous acceptons toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express), ainsi que les paiements mobiles (Apple Pay, Google Pay) et les espèces."
+        }
+      ]
+    }
+  ]
+}

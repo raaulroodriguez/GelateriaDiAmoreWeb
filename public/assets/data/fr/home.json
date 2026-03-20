@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "titulo1": "Gelateria Di Am",
+    "titulo2": "re",
+    "subtitulo": "L'authentique saveur italienne à chaque cuillère",
+    "botonTexto": "Venez nous rendre visite",
+    "botonLink": "/ubicacion",
+    "video": "assets/video/video1.mp4"
+  },
+  "pasion": {
+    "titulo": "Notre Passion",
+    "texto": "Depuis 2013, nous nous consacrons à sucrer les moments spéciaux de nos clients.\n\nChaque glace est préparée quotidiennement, garantissant une fraîcheur et une saveur incomparables.\n\nParce que nous croyons que les meilleurs souvenirs se font avec les meilleures saveurs."
+  },
+  "productos": [
+    {
+      "titulo": "Gelato Italien",
+      "descripcion": "Plus de 20 parfums crémeux préparés chaque jour avec des ingrédients frais et d'authentiques recettes italiennes.\n\nDes classiques comme la pistache et la stracciatella aux parfums uniques.",
+      "imagen": "assets/img/lotus.jpeg",
+      "botonTexto": "Découvrez nos parfums",
+      "botonLink": "/helados"
+    },
+    {
+      "titulo": "Glaces à Bâtonnet",
+      "descripcion": "Glaces à bâtonnet 100% fruits naturels sans sucres ajoutés, parfaites pour les amateurs de santé, ou nos irrésistibles glaces crémeuses aux textures douces qui vous transporteront dans un été italien.\n\nFraîcheur garantie à chaque bouchée.",
+      "imagen": "assets/img/polo3.png",
+      "botonTexto": "Voir les variétés",
+      "botonLink": "/paletas"
+    },
+    {
+      "titulo": "Boissons Rafraîchissantes",
+      "descripcion": "Milkshakes crémeux, smoothies aux fruits naturels, granités italiens rafraîchissants, frappés au café préparés avec notre café fraîchement torréfié.\n\nLa combinaison parfaite pour accompagner votre glace ou à savourer seuls.",
+      "imagen": "assets/img/bebidas.png",
+      "botonTexto": "Explorer les boissons",
+      "botonLink": "/bebidas"
+    },
+    {
+      "titulo": "Desserts Chauds",
+      "descripcion": "Bubble Waffles artisanaux moelleux, crêpes fines garnies de Nutella ou de chocolats chauds, gaufres dorées et pancakes moelleux.\n\nTous personnalisables avec vos toppings préférés.",
+      "imagen": "assets/img/bubble.png",
+      "botonTexto": "Voir les desserts",
+      "botonLink": "/postres"
+    }
+  ],
+  "caracteristicas": [
+    {
+      "titulo": "Ingrédients de Qualité Premium",
+      "descripcion": "Nous sélectionnons soigneusement des fruits frais, des pâtes de la plus haute qualité, des fruits secs et les meilleurs produits italiens."
+    },
+    {
+      "titulo": "Recettes Traditionnelles",
+      "descripcion": "Nous utilisons des méthodes artisanales italiennes transmises de génération en génération."
+    },
+    {
+      "titulo": "Innovation Constante",
+      "descripcion": "Chaque saison, nous créons de nouveaux parfums surprenants qui conquièrent les palais."
+    },
+    {
+      "titulo": "Pour Tous",
+      "descripcion": "Nous proposons des options sans lactose, sans gluten et véganes, car tout le monde mérite de se faire plaisir."
+    }
+  ],
+  "ubicacion": {
+    "titulo": "Nous vous attendons au Cœur de Málaga !",
+    "subtitulo": "Ouvert tous les jours de l'année",
+    "botonTexto": "Obtenir l'itinéraire",
+    "botonLink": "/ubicacion",
+    "mapaUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.03779276423!2d-4.423870423425326!3d36.72165357212215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f744121652d3%3A0x8abd8bc55ad31f77!2sGELATERIA%20DI%20AMORE!5e0!3m2!1ses!2ses!4v1761810614462!5m2!1ses!2ses",
+    "direccion": "C. Granada, N.9, Málaga"
+  }
+}

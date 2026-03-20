@@ -1,0 +1,60 @@
+{
+  "header": [
+    { "label": "nav.inicio", "href": "/", "children": [] },
+    {
+      "label": "nav.sabores",
+      "href": null,
+      "children": [
+        { "label": "nav.helados", "href": "/helados" },
+        { "label": "nav.paletas", "href": "/paletas" },
+        { "label": "nav.bebidas", "href": "/bebidas" },
+        { "label": "nav.postres", "href": "/postres" }
+      ]
+    },
+    {
+      "label": "nav.nosotros",
+      "href": null,
+      "children": [
+        { "label": "nav.ubicacion", "href": "/ubicacion" },
+        { "label": "nav.horario", "href": "/horarios" },
+        { "label": "nav.faq", "href": "/faq" }
+      ]
+    },
+    { "label": "nav.contacto", "href": "/contacto", "children": [] }
+  ],
+  "footer": {
+    "columnas": [
+      {
+        "titulo": "footer.aviso_legal",
+        "links": [
+          { "label": "footer.condiciones", "href": "/condiciones" },
+          { "label": "footer.privacidad", "href": "/politica" },
+          { "label": "footer.cookies", "href": "/cookies" }
+        ]
+      },
+      {
+        "titulo": "footer.sobre",
+        "links": [
+          { "label": "footer.nuestros_productos", "href": "/helados" },
+          { "label": "footer.donde", "href": "/ubicacion" },
+          { "label": "footer.opinion", "href": "https://maps.app.goo.gl/eeNv8rn7wdJ8uWoa8", "externo": true }
+        ]
+      },
+      {
+        "titulo": "footer.ayuda",
+        "links": [
+          { "label": "footer.faq", "href": "/faq" },
+          { "label": "footer.atencion", "href": "/contacto" },
+          { "label": "footer.trabaja", "href": "/trabaja" }
+        ]
+      }
+    ],
+    "redesSociales": [
+      { "nombre": "Instagram", "href": "https://www.instagram.com/gelateria_diamore/", "imagen": "assets/img/ig.png" },
+      { "nombre": "TikTok", "href": "https://www.tiktok.com/@gelateria_diamore", "imagen": "assets/img/tiktok.png" },
+      { "nombre": "Facebook", "href": "https://www.facebook.com/gelateriadiamore/", "imagen": "assets/img/fb.png" }
+    ],
+    "copyright": "© 2025 Gelateria Di Amore, Inc",
+    "autor": "By </> Raúl Rodríguez"
+  }
+}

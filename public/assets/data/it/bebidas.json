@@ -1,0 +1,32 @@
+{
+  "bebidas": [
+    { "id": 1, "nombre": "Caffè da Asporto", "descripcion": "Caffè appena preparato da portare via, perfetto per ogni momento della giornata", "imagen": "assets/img/bebidas.png", "tipo": "cafe", "badgeTexto": "Caffè", "badgeClase": "cafe" },
+    { "id": 2, "nombre": "Granita di Fragola", "descripcion": "Granita rinfrescante di fragola naturale", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 3, "nombre": "Granita di Limone", "descripcion": "Classica granita al limone", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 4, "nombre": "Granita Tropicale", "descripcion": "Esotica miscela di sapori tropicali", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 5, "nombre": "Granita al Caffè", "descripcion": "Intensa granita al caffè per gli amanti del caffè", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granita", "badgeClase": "granizado" },
+    { "id": 6, "nombre": "Frullato al Gelato", "descripcion": "Scegli il tuo gusto di gelato preferito o combina fino a 2 gusti", "imagen": "assets/img/bebidas.png", "tipo": "batido", "badgeTexto": "Frullato", "badgeClase": "batido" },
+    { "id": 7, "nombre": "Smoothie di Frutta", "descripcion": "Frullati naturali con i nostri ghiaccioli alla frutta. Combina fino a 2 gusti", "imagen": "assets/img/bebidas.png", "tipo": "smoothie", "badgeTexto": "Smoothie", "badgeClase": "smoothie" },
+    { "id": 8, "nombre": "Frappé al Caffè", "descripcion": "Base di caffè con gelato al caffè, frullato fino a ottenere una texture perfetta", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 9, "nombre": "Frappé Caffè e Vaniglia", "descripcion": "Base di caffè con gelato al caffè e vaniglia per un sapore più delicato", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 10, "nombre": "Acqua Minerale", "descripcion": "Acqua minerale naturale. Disponibile in formato piccolo e grande", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Acqua", "badgeClase": "agua" },
+    { "id": 11, "nombre": "Acqua Frizzante", "descripcion": "Acqua minerale frizzante. Disponibile in formato piccolo", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Acqua", "badgeClase": "agua" }
+  ],
+  "personalizacion": [
+    {
+      "icono": "fas fa-blender",
+      "titulo": "Personalizza la Tua Bevanda",
+      "contenido": [
+        { "label": "Frullati", "texto": "Scegli qualsiasi gusto dei nostri gelati o combina fino a 2 gusti diversi per creare il tuo frullato perfetto." },
+        { "label": "Smoothie", "texto": "Seleziona tra i nostri gusti di frutta fresca: Fragola, Mango, Frutti di Bosco, Limone, Ananas, Anguria. Mescola fino a 2 gusti!" }
+      ]
+    },
+    {
+      "icono": "fas fa-coffee",
+      "titulo": "Frappé Artigianali",
+      "contenido": [
+        { "label": "", "texto": "I nostri frappé vengono preparati con caffè espresso italiano di qualità e gelato artigianale. Scegli tra la nostra versione classica con gelato al caffè o quella più delicata con vaniglia." }
+      ]
+    }
+  ]
+}

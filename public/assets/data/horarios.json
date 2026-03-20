@@ -1,0 +1,56 @@
+{
+  "titulo": "¿Cuándo abrimos para ti?",
+  "subtitulo": "¡Qué alegría tenerte aquí! Estamos abiertos los 365 días del año, porque el buen gelato no conoce de calendarios",
+  "temporadas": [
+    {
+      "id": "verano",
+      "nombre": "Verano",
+      "meses": "Junio - Agosto",
+      "clase": "verano",
+      "tipo": "circulo",
+      "horarios": [
+        { "dias": "Todos los días", "horas": "10:30 - 02:00" }
+      ]
+    },
+    {
+      "id": "primavera",
+      "nombre": "Primavera",
+      "meses": "Marzo - Mayo",
+      "clase": "",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Lun - Jue", "horas": "11:00 - 01:00" },
+        { "dias": "Vie - Sáb", "horas": "11:00 - 02:00" },
+        { "dias": "Domingo", "horas": "11:00 - 01:00" }
+      ]
+    },
+    {
+      "id": "otono",
+      "nombre": "Otoño",
+      "meses": "Octubre - Noviembre",
+      "clase": "otono",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Lun - Jue", "horas": "11:00 - 00:00" },
+        { "dias": "Vie - Sáb", "horas": "11:00 - 01:00" },
+        { "dias": "Domingo", "horas": "11:00 - 00:00" }
+      ]
+    },
+    {
+      "id": "invierno",
+      "nombre": "Invierno",
+      "meses": "Diciembre - Febrero",
+      "clase": "invierno",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Lun - Jue", "horas": "11:00 - 01:00" },
+        { "dias": "Vie - Sáb", "horas": "11:00 - 02:00" },
+        { "dias": "Domingo", "horas": "11:00 - 01:00" }
+      ]
+    }
+  ],
+  "infoEspecial": [
+    { "titulo": "Festivos", "descripcion": "Abierto en todos los festivos con horario según temporada" },
+    { "titulo": "Navidad y Año Nuevo", "descripcion": "Consultar horarios especiales en nuestras redes sociales" }
+  ]
+}

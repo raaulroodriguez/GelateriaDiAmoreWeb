@@ -1,0 +1,38 @@
+/* FAQ component — layout handled by Tailwind utility classes */
+
+/* Remove default marker arrow on summary */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Rotate chevron when open */
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Highlight border when open */
+.faq-item[open] {
+  border-color: var(--color-vino, #a3405b);
+  box-shadow: 0 8px 25px rgba(163, 64, 91, 0.15);
+}
+
+/* Hover background on summary */
+.faq-item summary:hover {
+  background-color: var(--color-rosa-light, #e8b4cb);
+}
+
+/* Fade-in animation for answer content */
+.faq-item[open] > div {
+  animation: faqFadeIn 0.3s ease;
+}
+
+@keyframes faqFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

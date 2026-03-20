@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "titulo1": "Gelateria Di Am",
+    "titulo2": "re",
+    "subtitulo": "El auténtico sabor italiano en cada cucharada",
+    "botonTexto": "Visítanos",
+    "botonLink": "/ubicacion",
+    "video": "assets/video/video1.mp4"
+  },
+  "pasion": {
+    "titulo": "Nuestra Pasión",
+    "texto": "Desde 2013, nos dedicamos a endulzar los momentos especiales de nuestros clientes.\n\nCada helado es preparado diariamente, garantizando frescura y sabor inigualable.\n\nPorque creemos que los mejores recuerdos se hacen con los mejores sabores."
+  },
+  "productos": [
+    {
+      "titulo": "Gelato Italiano",
+      "descripcion": "Más de 20 sabores cremosos preparados cada día con ingredientes frescos y auténticas recetas italianas.\n\nDesde los clásicos como pistacho y stracciatella hasta sabores únicos.",
+      "imagen": "assets/img/cono.png",
+      "botonTexto": "Descubre nuestros sabores",
+      "botonLink": "/helados"
+    },
+    {
+      "titulo": "Polos Helados",
+      "descripcion": "Polos de fruta 100% natural sin azúcar añadido, perfectos para los más saludables, o nuestros polos cremosos irresistibles con texturas suaves que te transportarán al verano italiano.\n\nFrescura garantizada en cada mordisco.",
+      "imagen": "assets/img/polo3.png",
+      "botonTexto": "Ver variedades",
+      "botonLink": "/paletas"
+    },
+    {
+      "titulo": "Bebidas Refrescantes",
+      "descripcion": "Batidos cremosos, smoothies con frutas naturales, granizados italianos refrescantes, frappés de café con nuestro café recién preparado.\n\nLa combinación perfecta para acompañar tu helado o disfrutar por sí solos.",
+      "imagen": "assets/img/bebidas.png",
+      "botonTexto": "Explorar bebidas",
+      "botonLink": "/bebidas"
+    },
+    {
+      "titulo": "Postres Calientes",
+      "descripcion": "Bubble Waffles artesanales esponjosos, crepes finos rellenos con nutella o chocolates calientes, gofres dorados y tortitas esponjosas.\n\nTodos personalizables con tus toppings favoritos.",
+      "imagen": "assets/img/bubble.png",
+      "botonTexto": "Ver postres",
+      "botonLink": "/postres"
+    }
+  ],
+  "caracteristicas": [
+    {
+      "titulo": "Ingredientes De Alta Calidad",
+      "descripcion": "Seleccionamos cuidadosamente frutas frescas, pastas de la máxima calidad, frutos secos y los mejores productos italianos."
+    },
+    {
+      "titulo": "Recetas Tradicionales",
+      "descripcion": "Utilizamos métodos artesanales italianos transmitidos de generación en generación."
+    },
+    {
+      "titulo": "Innovación Constante",
+      "descripcion": "Cada temporada creamos nuevos sabores sorprendentes que conquistan paladares."
+    },
+    {
+      "titulo": "Para Todos",
+      "descripcion": "Ofrecemos opciones sin lactosa, sin gluten y veganas, porque todos merecen disfrutar."
+    }
+  ],
+  "ubicacion": {
+    "titulo": "¡Te esperamos en el corazón de Málaga!",
+    "subtitulo": "Abiertos todos los días del año",
+    "botonTexto": "Cómo llegar",
+    "botonLink": "/ubicacion",
+    "mapaUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.03779276423!2d-4.423870423425326!3d36.72165357212215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f744121652d3%3A0x8abd8bc55ad31f77!2sGELATERIA%20DI%20AMORE!5e0!3m2!1ses!2ses!4v1761810614462!5m2!1ses!2ses",
+    "direccion": "C. Granada, N.9, Málaga"
+  }
+}

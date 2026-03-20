@@ -1,0 +1,32 @@
+{
+  "bebidas": [
+    { "id": 1, "nombre": "Café Take Away", "descripcion": "Café recién hecho para llevar, perfecto para cualquier momento del día", "imagen": "assets/img/bebidas.png", "tipo": "cafe", "badgeTexto": "Café", "badgeClase": "cafe" },
+    { "id": 2, "nombre": "Granizado de Fresa", "descripcion": "Refrescante granizado de fresa natural", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granizado", "badgeClase": "granizado" },
+    { "id": 3, "nombre": "Granizado de Limón", "descripcion": "Clásico granizado de limón", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granizado", "badgeClase": "granizado" },
+    { "id": 4, "nombre": "Granizado Tropical", "descripcion": "Exótica mezcla de sabores tropicales", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granizado", "badgeClase": "granizado" },
+    { "id": 5, "nombre": "Granizado de Café", "descripcion": "Intenso granizado de café para los amantes del café", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granizado", "badgeClase": "granizado" },
+    { "id": 6, "nombre": "Batidos de Helado", "descripcion": "Elige tu sabor favorito de helado o combina hasta 2 sabores", "imagen": "assets/img/bebidas.png", "tipo": "batido", "badgeTexto": "Batido", "badgeClase": "batido" },
+    { "id": 7, "nombre": "Smoothies de Fruta", "descripcion": "Batidos naturales con nuestras paletas de fruta. Combina hasta 2 sabores", "imagen": "assets/img/bebidas.png", "tipo": "smoothie", "badgeTexto": "Smoothie", "badgeClase": "smoothie" },
+    { "id": 8, "nombre": "Frappé de Café", "descripcion": "Base de café con helado de café, batido hasta conseguir una textura perfecta", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 9, "nombre": "Frappé Café y Vainilla", "descripcion": "Base de café con helado de café y vainilla para un sabor más suave", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 10, "nombre": "Agua Mineral", "descripcion": "Agua mineral natural. Disponible en tamaño pequeño y grande", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Agua", "badgeClase": "agua" },
+    { "id": 11, "nombre": "Agua con Gas", "descripcion": "Agua mineral con gas. Disponible en tamaño pequeño", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Agua", "badgeClase": "agua" }
+  ],
+  "personalizacion": [
+    {
+      "icono": "fas fa-blender",
+      "titulo": "Personaliza tu Bebida",
+      "contenido": [
+        { "label": "Batidos", "texto": "Elige cualquier sabor de nuestros helados o combina hasta 2 sabores diferentes para crear tu batido perfecto." },
+        { "label": "Smoothies", "texto": "Selecciona entre nuestros sabores de frutas frescas: Fresa, Mango, Frutas del Bosque, Limón, Piña, Sandía. ¡Mezcla hasta 2 sabores!" }
+      ]
+    },
+    {
+      "icono": "fas fa-coffee",
+      "titulo": "Frappés Artesanales",
+      "contenido": [
+        { "label": "", "texto": "Nuestros frappés se elaboran con café expreso italiano de calidad y helado artesanal. Elige entre nuestra versión clásica con helado de café o la más suave con vainilla." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "nav.inicio": "Home",
+  "nav.sabores": "Sapori",
+  "nav.helados": "Gelati",
+  "nav.paletas": "Ghiaccioli",
+  "nav.bebidas": "Bevande",
+  "nav.postres": "Dolci",
+  "nav.nosotros": "Chi Siamo",
+  "nav.ubicacion": "Dove Siamo",
+  "nav.horario": "Orari",
+  "nav.faq": "FAQ",
+  "nav.contacto": "Contatti",
+  "nav.menu_aria": "Menu",
+
+  "footer.aviso_legal": "Avviso Legale",
+  "footer.condiciones": "Termini di Utilizzo",
+  "footer.privacidad": "Politica sulla Privacy",
+  "footer.cookies": "Preferenze Cookie",
+  "footer.sobre": "Su Gelateria Di Amore",
+  "footer.nuestros_productos": "I Nostri Prodotti",
+  "footer.donde": "Dove Trovarci",
+  "footer.opinion": "La Tua Opinione Conta",
+  "footer.ayuda": "Aiuto",
+  "footer.faq": "Domande Frequenti",
+  "footer.atencion": "Servizio Clienti",
+  "footer.trabaja": "Lavora Con Noi",
+  "footer.rrss": "Social Media",
+
+  "home.productos_titulo": "I Nostri Prodotti",
+  "home.especiales_titulo": "Cosa Ci Rende Speciali?",
+
+  "helados.titulo": "I Nostri Gelati Artigianali",
+  "helados.subtitulo": "Ogni gelato è preparato quotidianamente con ingredienti freschi e naturali, seguendo ricette tradizionali italiane",
+
+  "paletas.titulo": "I Nostri Ghiaccioli Artigianali",
+  "paletas.subtitulo": "Ghiaccioli preparati con frutta fresca e creme naturali, congelati immediatamente per preservare tutto il loro sapore",
+
+  "bebidas.titulo": "Le Nostre Bevande Speciali",
+  "bebidas.subtitulo": "Rinfrescanti bevande artigianali preparate con ingredienti naturali, perfette per accompagnare i tuoi gelati preferiti",
+  "bebidas.personaliza_titulo": "Come Personalizzi la Tua Bevanda?",
+
+  "postres.titulo": "I Nostri Dolci Caldi",
+  "postres.subtitulo": "Creazioni uniche che combinano dolci con i migliori ingredienti per un'esperienza indimenticabile",
+  "postres.personaliza_titulo": "Personalizza il Tuo Dolce",
+  "postres.personaliza_subtitulo": "Scegli tra le nostre opzioni per creare la tua combinazione perfetta",
+  "postres.complemento_titulo": "Scegli il Tuo Complemento",
+  "postres.complemento_subtitulo": "Incluso con il tuo dolce",
+  "postres.chocolates": "Cioccolati",
+  "postres.siropes": "Salse e Sciroppi",
+  "postres.otros": "Altri",
+  "postres.combinaciones_titulo": "Combinazioni Popolari",
+
+  "ubicacion.titulo": "Trovaci nel Cuore di Málaga",
+  "ubicacion.direccion": "Calle Granada Nº9, Distretto Centro, 29015 Málaga",
+  "ubicacion.horarios_btn": "Orari"
+}

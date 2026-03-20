@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "titulo1": "Gelateria Di Am",
+    "titulo2": "re",
+    "subtitulo": "The authentic Italian flavour in every scoop",
+    "botonTexto": "Visit Us",
+    "botonLink": "/ubicacion",
+    "video": "assets/video/video1.mp4"
+  },
+  "pasion": {
+    "titulo": "Our Passion",
+    "texto": "Since 2013, we have dedicated ourselves to sweetening the special moments of our customers.\n\nEvery ice cream is prepared daily, guaranteeing unmatched freshness and flavour.\n\nBecause we believe the best memories are made with the best flavours."
+  },
+  "productos": [
+    {
+      "titulo": "Italian Gelato",
+      "descripcion": "Over 20 creamy flavours prepared every day with fresh ingredients and authentic Italian recipes.\n\nFrom classics like pistachio and stracciatella to unique flavours.",
+      "imagen": "assets/img/lotus.jpeg",
+      "botonTexto": "Discover our flavours",
+      "botonLink": "/helados"
+    },
+    {
+      "titulo": "Ice Pops",
+      "descripcion": "100% natural fruit ice pops with no added sugar, perfect for health-conscious customers, or our irresistible creamy ice pops with smooth textures that will take you to an Italian summer.\n\nFreshness guaranteed in every bite.",
+      "imagen": "assets/img/polo3.png",
+      "botonTexto": "See varieties",
+      "botonLink": "/paletas"
+    },
+    {
+      "titulo": "Refreshing Drinks",
+      "descripcion": "Creamy milkshakes, natural fruit smoothies, refreshing Italian granitas, coffee frappés made with our freshly brewed coffee.\n\nThe perfect combination to accompany your ice cream or enjoy on their own.",
+      "imagen": "assets/img/bebidas.png",
+      "botonTexto": "Explore drinks",
+      "botonLink": "/bebidas"
+    },
+    {
+      "titulo": "Warm Desserts",
+      "descripcion": "Fluffy artisan Bubble Waffles, thin crêpes filled with Nutella or warm chocolates, golden waffles and fluffy pancakes.\n\nAll customisable with your favourite toppings.",
+      "imagen": "assets/img/bubble.png",
+      "botonTexto": "See desserts",
+      "botonLink": "/postres"
+    }
+  ],
+  "caracteristicas": [
+    {
+      "titulo": "Premium Quality Ingredients",
+      "descripcion": "We carefully select fresh fruits, top-quality pastes, nuts and the finest Italian products."
+    },
+    {
+      "titulo": "Traditional Recipes",
+      "descripcion": "We use Italian artisan methods passed down from generation to generation."
+    },
+    {
+      "titulo": "Constant Innovation",
+      "descripcion": "Every season we create surprising new flavours that conquer palates."
+    },
+    {
+      "titulo": "For Everyone",
+      "descripcion": "We offer lactose-free, gluten-free and vegan options, because everyone deserves to indulge."
+    }
+  ],
+  "ubicacion": {
+    "titulo": "We're Waiting for You in the Heart of Málaga!",
+    "subtitulo": "Open every day of the year",
+    "botonTexto": "Get Directions",
+    "botonLink": "/ubicacion",
+    "mapaUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.03779276423!2d-4.423870423425326!3d36.72165357212215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f744121652d3%3A0x8abd8bc55ad31f77!2sGELATERIA%20DI%20AMORE!5e0!3m2!1ses!2ses!4v1761810614462!5m2!1ses!2ses",
+    "direccion": "C. Granada, N.9, Málaga"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "nav.inicio": "Home",
+  "nav.sabores": "Flavours",
+  "nav.helados": "Ice Creams",
+  "nav.paletas": "Ice Pops",
+  "nav.bebidas": "Drinks",
+  "nav.postres": "Desserts",
+  "nav.nosotros": "About Us",
+  "nav.ubicacion": "Location",
+  "nav.horario": "Opening Hours",
+  "nav.faq": "FAQ",
+  "nav.contacto": "Contact",
+  "nav.menu_aria": "Menu",
+
+  "footer.aviso_legal": "Legal Notice",
+  "footer.condiciones": "Terms of Use",
+  "footer.privacidad": "Privacy Policy",
+  "footer.cookies": "Cookie Preferences",
+  "footer.sobre": "About Gelateria Di Amore",
+  "footer.nuestros_productos": "Our Products",
+  "footer.donde": "Where to Find Us",
+  "footer.opinion": "Your Opinion Matters",
+  "footer.ayuda": "Help",
+  "footer.faq": "Frequently Asked Questions",
+  "footer.atencion": "Customer Service",
+  "footer.trabaja": "Work With Us",
+  "footer.rrss": "Social Media",
+
+  "home.productos_titulo": "Our Products",
+  "home.especiales_titulo": "What Makes Us Special?",
+
+  "helados.titulo": "Our Artisan Ice Creams",
+  "helados.subtitulo": "Every ice cream is made daily with fresh, natural ingredients following traditional Italian recipes",
+
+  "paletas.titulo": "Our Artisan Ice Pops",
+  "paletas.subtitulo": "Ice pops made with fresh fruits and natural creams, frozen immediately to preserve all their flavour",
+
+  "bebidas.titulo": "Our Special Drinks",
+  "bebidas.subtitulo": "Refreshing artisan drinks made with natural ingredients, perfect to enjoy alongside your favourite ice cream",
+  "bebidas.personaliza_titulo": "How Do You Personalise Your Drink?",
+
+  "postres.titulo": "Our Warm Desserts",
+  "postres.subtitulo": "Unique creations combining desserts with the finest ingredients for an unforgettable experience",
+  "postres.personaliza_titulo": "Personalise Your Dessert",
+  "postres.personaliza_subtitulo": "Choose from our options to create your perfect combination",
+  "postres.complemento_titulo": "Choose Your Complement",
+  "postres.complemento_subtitulo": "Included with your dessert",
+  "postres.chocolates": "Chocolates",
+  "postres.siropes": "Sauces & Syrups",
+  "postres.otros": "Others",
+  "postres.combinaciones_titulo": "Popular Combinations",
+
+  "ubicacion.titulo": "Find Us in the Heart of Málaga",
+  "ubicacion.direccion": "Calle Granada Nº9, Centro District, 29015 Málaga",
+  "ubicacion.horarios_btn": "Opening Hours"
+}

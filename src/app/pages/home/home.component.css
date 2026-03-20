@@ -1,0 +1,21 @@
+/* Home component — layout handled by Tailwind utility classes */
+
+.hero-content-animation {
+  animation: entrarDerecha 1s ease-out;
+}
+
+.bg-video {
+  pointer-events: none !important;
+  user-select: none;
+}
+
+@keyframes entrarDerecha {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

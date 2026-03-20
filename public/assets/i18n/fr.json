@@ -1,0 +1,56 @@
+{
+  "nav.inicio": "Accueil",
+  "nav.sabores": "Saveurs",
+  "nav.helados": "Glaces",
+  "nav.paletas": "Bâtonnets Glacés",
+  "nav.bebidas": "Boissons",
+  "nav.postres": "Desserts",
+  "nav.nosotros": "À Propos",
+  "nav.ubicacion": "Notre Adresse",
+  "nav.horario": "Horaires",
+  "nav.faq": "FAQ",
+  "nav.contacto": "Contact",
+  "nav.menu_aria": "Menu",
+
+  "footer.aviso_legal": "Mentions Légales",
+  "footer.condiciones": "Conditions d'utilisation",
+  "footer.privacidad": "Politique de Confidentialité",
+  "footer.cookies": "Préférences Cookies",
+  "footer.sobre": "À Propos de Gelateria Di Amore",
+  "footer.nuestros_productos": "Nos Produits",
+  "footer.donde": "Où Nous Trouver",
+  "footer.opinion": "Votre Avis Compte",
+  "footer.ayuda": "Aide",
+  "footer.faq": "Questions Fréquentes",
+  "footer.atencion": "Service Client",
+  "footer.trabaja": "Rejoignez Notre Équipe",
+  "footer.rrss": "Réseaux Sociaux",
+
+  "home.productos_titulo": "Nos Produits",
+  "home.especiales_titulo": "Qu'est-ce qui Nous Rend Spéciaux ?",
+
+  "helados.titulo": "Nos Glaces Artisanales",
+  "helados.subtitulo": "Chaque glace est préparée quotidiennement avec des ingrédients frais et naturels, selon les recettes traditionnelles italiennes",
+
+  "paletas.titulo": "Nos Bâtonnets Glacés Artisanaux",
+  "paletas.subtitulo": "Bâtonnets préparés avec des fruits frais et des crèmes naturelles, congelés immédiatement pour préserver toute leur saveur",
+
+  "bebidas.titulo": "Nos Boissons Spéciales",
+  "bebidas.subtitulo": "Des boissons artisanales rafraîchissantes préparées avec des ingrédients naturels, parfaites pour accompagner vos glaces préférées",
+  "bebidas.personaliza_titulo": "Comment Personnalisez-vous Votre Boisson ?",
+
+  "postres.titulo": "Nos Desserts Chauds",
+  "postres.subtitulo": "Des créations uniques combinant desserts et les meilleurs ingrédients pour une expérience inoubliable",
+  "postres.personaliza_titulo": "Personnalisez Votre Dessert",
+  "postres.personaliza_subtitulo": "Choisissez parmi nos options pour créer votre combinaison parfaite",
+  "postres.complemento_titulo": "Choisissez Votre Accompagnement",
+  "postres.complemento_subtitulo": "Inclus avec votre dessert",
+  "postres.chocolates": "Chocolats",
+  "postres.siropes": "Sauces & Sirops",
+  "postres.otros": "Autres",
+  "postres.combinaciones_titulo": "Combinaisons Populaires",
+
+  "ubicacion.titulo": "Retrouvez-nous au Cœur de Málaga",
+  "ubicacion.direccion": "Calle Granada Nº9, Quartier Centre, 29015 Málaga",
+  "ubicacion.horarios_btn": "Horaires"
+}

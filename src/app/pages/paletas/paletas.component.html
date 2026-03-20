@@ -1,0 +1,39 @@
+@if (paletasData(); as data) {
+  <main class="pt-20 md:pt-24 pb-16 max-w-7xl mx-auto px-4 sm:px-6">
+
+    <section class="text-center py-10 md:py-14">
+      <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-vino mb-4">{{ 'paletas.titulo' | translate }}</h1>
+      <p class="text-gris text-sm md:text-base max-w-2xl mx-auto">{{ 'paletas.subtitulo' | translate }}</p>
+    </section>
+
+    <app-divisor />
+
+    <div class="border-b-2 border-cream-2 mb-8">
+      <div class="grid grid-cols-2 md:flex md:flex-nowrap">
+        @for (cat of data.categorias; track cat.id) {
+          <button class="filtro-btn" [class.active]="filtroActivo() === cat.id" (click)="setFiltro(cat.id)">
+            <i [class]="cat.icono"></i> {{ cat.nombre }}
+          </button>
+        }
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      @for (paleta of paletasFiltradas(); track paleta.id) {
+        <app-product-card
+          [imagen]="paleta.imagen"
+          [nombre]="paleta.nombre"
+          [descripcion]="paleta.descripcion"
+          [badgeTexto]="paleta.badgeTexto"
+          [badgeClase]="paleta.badgeClase"
+          [alergenos]="paleta.alergenos"
+          [temporada]="paleta.temporada" />
+      }
+    </div>
+
+    <app-divisor />
+
+    <app-allergen-info [alergenos]="data.alergenosInfo" [notaImportante]="data.notaImportante" />
+
+  </main>
+}

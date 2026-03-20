@@ -1,0 +1,52 @@
+@if (footerData(); as data) {
+  <footer class="site-footer">
+
+    <div class="footer-grid">
+
+      @for (columna of data.columnas; track columna.titulo) {
+        <nav>
+          <p class="footer-titulo">{{ columna.titulo | translate }}</p>
+          <ul class="footer-lista">
+            @for (link of columna.links; track link.label) {
+              <li>
+                @if (link.externo) {
+                  <a [href]="link.href" target="_blank">{{ link.label | translate }}</a>
+                } @else {
+                  <a [routerLink]="link.href">{{ link.label | translate }}</a>
+                }
+              </li>
+            }
+          </ul>
+        </nav>
+      }
+
+      <nav>
+        <p class="footer-titulo">{{ 'footer.rrss' | translate }}</p>
+        <ul class="rrss-lista">
+          @for (red of data.redesSociales; track red.nombre) {
+            <li>
+              <a [href]="red.href" target="_blank">
+                <img [src]="red.imagen" [alt]="red.nombre" />
+              </a>
+            </li>
+          }
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>{{ data.copyright }}</p>
+      <p><a href="https://github.com/raaulroodriguez" class="hover:text-vino">{{ data.autor }}</a></p>
+    </div>
+
+    <button
+      class="scroll-top"
+      [class.show]="showScrollBtn()"
+      (click)="scrollToTop()"
+      aria-label="Volver arriba">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+  </footer>
+}

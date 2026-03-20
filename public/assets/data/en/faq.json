@@ -1,0 +1,56 @@
+{
+  "titulo": "Frequently Asked Questions",
+  "subtitulo": "Find answers to the most common questions about our artisan ice creams",
+  "categorias": [
+    {
+      "titulo": "About Our Products",
+      "icono": "fas fa-ice-cream",
+      "preguntas": [
+        {
+          "pregunta": "What makes your ice creams artisan?",
+          "respuesta": "Our ice creams are made daily in our own gelateria, using fresh, natural ingredients of the highest quality. We use no preservatives or artificial colourings, and each flavour is carefully prepared following traditional Italian recipes."
+        },
+        {
+          "pregunta": "Do you have lactose-free or vegan options?",
+          "respuesta": "Yes, we offer a wide variety of vegan ice creams. We also have lactose-free options and 100% vegan natural fruit sorbets. Ask at the counter about our special options."
+        },
+        {
+          "pregunta": "How often do you change the flavours?",
+          "respuesta": "We have classic flavours available all year round, such as chocolate, vanilla and strawberry. In addition, each season we introduce special flavours that vary depending on the availability of seasonal fruits and special occasions. Follow us on social media to find out about our latest additions!"
+        }
+      ]
+    },
+    {
+      "titulo": "Allergies and Intolerances",
+      "icono": "fas fa-heartbeat",
+      "preguntas": [
+        {
+          "pregunta": "Do you have allergen information?",
+          "respuesta": "Yes, all allergen information is available in our shop and on our online menu. Our products may contain traces of nuts, egg, milk and gluten. If you have a specific allergy, please consult our staff before placing your order."
+        },
+        {
+          "pregunta": "Are the ice creams suitable for coeliacs?",
+          "respuesta": "We have several gluten-free flavours, but since we work with multiple ingredients in the same space, there may be cross-contamination. If you are coeliac, we recommend consulting with our team to find out the safest options for you."
+        }
+      ]
+    },
+    {
+      "titulo": "About Our Shop",
+      "icono": "fas fa-store",
+      "preguntas": [
+        {
+          "pregunta": "Where are you located?",
+          "respuesta": "We are located at C. Granada, N.9, in the heart of Málaga. We are near the historic centre, a few minutes' walk from the Cathedral."
+        },
+        {
+          "pregunta": "What are your opening hours?",
+          "respuesta": "Our hours vary by season. In summer we open from 10:30 to 20:00h, while in spring and winter our hours are from 11:00 to 20:00h."
+        },
+        {
+          "pregunta": "Do you accept credit cards?",
+          "respuesta": "Yes, we accept all major credit and debit cards (Visa, Mastercard, American Express), as well as mobile payments (Apple Pay, Google Pay) and cash."
+        }
+      ]
+    }
+  ]
+}

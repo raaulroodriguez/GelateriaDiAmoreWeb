@@ -1,0 +1,56 @@
+<div class="relative lang-selector">
+
+  <!-- Trigger: pill con bandera -->
+  <button
+    (click)="toggle()"
+    class="flex items-center gap-1.5 pl-1 pr-2.5 py-1 rounded-full border-2 border-cream-2
+           bg-white shadow-sm text-sm font-semibold text-gris select-none
+           hover:border-vino hover:text-vino transition-all duration-200">
+
+    <!-- Círculo: imagen si hay bandera, emoji si no -->
+    <span class="flex items-center justify-center w-7 h-7 rounded-full overflow-hidden bg-cream-2 shrink-0">
+      @if (currentOption?.bandera) {
+        <img [src]="currentOption!.bandera" [alt]="currentOption!.name" class="w-full h-full object-cover" />
+      } @else {
+        <span class="text-base leading-none">{{ currentOption?.flag }}</span>
+      }
+    </span>
+
+    <span class="text-xs font-bold tracking-wider uppercase">{{ langService.lang() }}</span>
+    <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200"
+       [ngClass]="{'rotate-180': isOpen()}"></i>
+  </button>
+
+  <!-- Dropdown -->
+  @if (isOpen()) {
+    <div class="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-vino-xl border border-cream-2
+                min-w-[155px] py-1.5 z-[100]">
+      @for (opt of langService.options; track opt.code) {
+        <button
+          (click)="select(opt.code)"
+          class="w-full flex items-center gap-2.5 px-3 py-2 text-sm transition-colors duration-150
+                 hover:bg-cream-2"
+          [ngClass]="{
+            'text-vino font-bold': langService.lang() === opt.code,
+            'text-gris': langService.lang() !== opt.code
+          }">
+
+          <!-- Círculo en dropdown: imagen si hay bandera, emoji si no -->
+          <span class="flex items-center justify-center w-7 h-7 rounded-full overflow-hidden bg-cream-2 shrink-0">
+            @if (opt.bandera) {
+              <img [src]="opt.bandera" [alt]="opt.name" class="w-full h-full object-cover" />
+            } @else {
+              <span class="text-base leading-none">{{ opt.flag }}</span>
+            }
+          </span>
+
+          <span>{{ opt.name }}</span>
+          @if (langService.lang() === opt.code) {
+            <i class="fa-solid fa-check ml-auto text-xs text-vino"></i>
+          }
+        </button>
+      }
+    </div>
+  }
+
+</div>

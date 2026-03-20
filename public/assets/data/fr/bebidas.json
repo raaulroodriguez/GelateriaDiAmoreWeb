@@ -1,0 +1,32 @@
+{
+  "bebidas": [
+    { "id": 1, "nombre": "Café à Emporter", "descripcion": "Café fraîchement préparé à emporter, parfait pour n'importe quel moment de la journée", "imagen": "assets/img/bebidas.png", "tipo": "cafe", "badgeTexto": "Café", "badgeClase": "cafe" },
+    { "id": 2, "nombre": "Granité à la Fraise", "descripcion": "Granité rafraîchissant à la fraise naturelle", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granité", "badgeClase": "granizado" },
+    { "id": 3, "nombre": "Granité au Citron", "descripcion": "Granité au citron classique", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granité", "badgeClase": "granizado" },
+    { "id": 4, "nombre": "Granité Tropical", "descripcion": "Mélange exotique de saveurs tropicales", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granité", "badgeClase": "granizado" },
+    { "id": 5, "nombre": "Granité au Café", "descripcion": "Granité café intense pour les amateurs de café", "imagen": "assets/img/bebidas.png", "tipo": "granizado", "badgeTexto": "Granité", "badgeClase": "granizado" },
+    { "id": 6, "nombre": "Milkshake à la Glace", "descripcion": "Choisissez votre parfum de glace préféré ou combinez jusqu'à 2 parfums", "imagen": "assets/img/bebidas.png", "tipo": "batido", "badgeTexto": "Milkshake", "badgeClase": "batido" },
+    { "id": 7, "nombre": "Smoothies aux Fruits", "descripcion": "Smoothies naturels avec nos glaces à bâtonnet aux fruits. Combinez jusqu'à 2 parfums", "imagen": "assets/img/bebidas.png", "tipo": "smoothie", "badgeTexto": "Smoothie", "badgeClase": "smoothie" },
+    { "id": 8, "nombre": "Frappé au Café", "descripcion": "Base de café avec glace au café, mixé pour obtenir une texture parfaite", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 9, "nombre": "Frappé Café et Vanille", "descripcion": "Base de café avec glace café et vanille pour une saveur plus douce", "imagen": "assets/img/bebidas.png", "tipo": "frappe", "badgeTexto": "Frappé", "badgeClase": "frappe" },
+    { "id": 10, "nombre": "Eau Minérale", "descripcion": "Eau minérale naturelle. Disponible en petite et grande taille", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Eau", "badgeClase": "agua" },
+    { "id": 11, "nombre": "Eau Gazeuse", "descripcion": "Eau minérale gazeuse. Disponible en petite taille", "imagen": "assets/img/bebidas.png", "tipo": "agua", "badgeTexto": "Eau", "badgeClase": "agua" }
+  ],
+  "personalizacion": [
+    {
+      "icono": "fas fa-blender",
+      "titulo": "Personnalisez Votre Boisson",
+      "contenido": [
+        { "label": "Milkshakes", "texto": "Choisissez n'importe quel parfum de nos glaces ou combinez jusqu'à 2 parfums différents pour créer votre milkshake parfait." },
+        { "label": "Smoothies", "texto": "Sélectionnez parmi nos parfums de fruits frais : Fraise, Mangue, Fruits Rouges, Citron, Ananas, Pastèque. Mélangez jusqu'à 2 parfums !" }
+      ]
+    },
+    {
+      "icono": "fas fa-coffee",
+      "titulo": "Frappés Artisanaux",
+      "contenido": [
+        { "label": "", "texto": "Nos frappés sont préparés avec du café espresso italien de qualité et de la glace artisanale. Choisissez entre notre version classique avec glace au café ou la plus douce avec de la vanille." }
+      ]
+    }
+  ]
+}

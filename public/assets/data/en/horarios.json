@@ -1,0 +1,56 @@
+{
+  "titulo": "When Do We Open for You?",
+  "subtitulo": "How lovely to have you here! We are open 365 days a year, because great gelato knows no calendar",
+  "temporadas": [
+    {
+      "id": "verano",
+      "nombre": "Summer",
+      "meses": "June - August",
+      "clase": "verano",
+      "tipo": "circulo",
+      "horarios": [
+        { "dias": "Every day", "horas": "10:30 - 02:00" }
+      ]
+    },
+    {
+      "id": "primavera",
+      "nombre": "Spring",
+      "meses": "March - May",
+      "clase": "",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Mon - Thu", "horas": "11:00 - 01:00" },
+        { "dias": "Fri - Sat", "horas": "11:00 - 02:00" },
+        { "dias": "Sunday", "horas": "11:00 - 01:00" }
+      ]
+    },
+    {
+      "id": "otono",
+      "nombre": "Autumn",
+      "meses": "October - November",
+      "clase": "otono",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Mon - Thu", "horas": "11:00 - 00:00" },
+        { "dias": "Fri - Sat", "horas": "11:00 - 01:00" },
+        { "dias": "Sunday", "horas": "11:00 - 00:00" }
+      ]
+    },
+    {
+      "id": "invierno",
+      "nombre": "Winter",
+      "meses": "December - February",
+      "clase": "invierno",
+      "tipo": "lineal",
+      "horarios": [
+        { "dias": "Mon - Thu", "horas": "11:00 - 01:00" },
+        { "dias": "Fri - Sat", "horas": "11:00 - 02:00" },
+        { "dias": "Sunday", "horas": "11:00 - 01:00" }
+      ]
+    }
+  ],
+  "infoEspecial": [
+    { "titulo": "Public Holidays", "descripcion": "Open on all public holidays with seasonal hours" },
+    { "titulo": "Christmas and New Year", "descripcion": "Check special hours on our social media" }
+  ]
+}

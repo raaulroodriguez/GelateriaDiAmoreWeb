@@ -1,0 +1,25 @@
+<main class="pt-20 md:pt-24 pb-16 max-w-4xl mx-auto px-4 sm:px-6">
+
+  <!-- TITLE -->
+  <div class="text-center py-10">
+    <h1 class="font-display text-3xl sm:text-4xl text-vino text-center mb-4">{{ 'ubicacion.titulo' | translate }}</h1>
+    <p class="text-gris text-sm md:text-base mb-6">{{ 'ubicacion.direccion' | translate }}</p>
+    <a routerLink="/horarios" class="btn-primary">{{ 'ubicacion.horarios_btn' | translate }}</a>
+  </div>
+
+  <app-divisor />
+
+  <!-- MAPA -->
+  <div class="mt-8">
+    <iframe
+      [src]="mapaUrl | safeUrl"
+      width="600" height="450"
+      style="border: 0; height: 400px; max-height: 60vw;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="w-full rounded-card-lg shadow-vino-lg border-4 border-vino hover:-translate-y-1 transition-all duration-300">
+    </iframe>
+  </div>
+
+</main>
