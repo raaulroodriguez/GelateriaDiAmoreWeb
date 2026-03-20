@@ -15,7 +15,7 @@
     {
       "titulo": "Italian Gelato",
       "descripcion": "Over 20 creamy flavours prepared every day with fresh ingredients and authentic Italian recipes.\n\nFrom classics like pistachio and stracciatella to unique flavours.",
-      "imagen": "assets/img/lotus.jpeg",
+      "imagen": "assets/img/cono.png",
       "botonTexto": "Discover our flavours",
       "botonLink": "/helados"
     },

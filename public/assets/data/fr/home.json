@@ -15,7 +15,7 @@
     {
       "titulo": "Gelato Italien",
       "descripcion": "Plus de 20 parfums crémeux préparés chaque jour avec des ingrédients frais et d'authentiques recettes italiennes.\n\nDes classiques comme la pistache et la stracciatella aux parfums uniques.",
-      "imagen": "assets/img/lotus.jpeg",
+      "imagen": "assets/img/cono.png",
       "botonTexto": "Découvrez nos parfums",
       "botonLink": "/helados"
     },
