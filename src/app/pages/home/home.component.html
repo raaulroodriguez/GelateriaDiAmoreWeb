@@ -2,7 +2,7 @@
 
   <!-- HERO -->
   <section class="relative h-screen overflow-hidden">
-    <video autoplay muted loop playsinline disablePictureInPicture
+    <video #bgVideo autoplay muted loop playsinline disablePictureInPicture preload="auto"
       controlsList="nodownload nofullscreen noremoteplayback"
       class="absolute inset-0 w-full h-full object-cover brightness-50 pointer-events-none select-none bg-video">
       <source [src]="data.hero.video" type="video/mp4" />

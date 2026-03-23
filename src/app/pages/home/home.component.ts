@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DataService } from '../../core/services/data.service';
 import { DivisorComponent } from '../../shared/components/divisor/divisor.component';
@@ -12,7 +12,8 @@ import { TranslatePipe } from '../../shared/pipes/translate.pipe';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
+  @ViewChild('bgVideo') bgVideoRef!: ElementRef<HTMLVideoElement>;
   private dataService = inject(DataService);
   homeData = signal<HomeData | null>(null);
 
@@ -20,6 +21,14 @@ export class HomeComponent {
     this.dataService.getHome().subscribe(data => {
       this.homeData.set(data);
     });
+  }
+
+  ngAfterViewInit() {
+    const video = this.bgVideoRef?.nativeElement;
+    if (video) {
+      video.muted = true;
+      video.volume = 0;
+    }
   }
 
   getPasionParagraphs(texto: string): string[] {
