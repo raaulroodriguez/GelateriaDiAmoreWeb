@@ -1,0 +1,29 @@
+{
+  "titulo": "Parlons-en !",
+  "subtitulo": "Vous avez une question, une suggestion ou souhaitez passer une commande spéciale ? Nous sommes là pour vous aider et réaliser vos envies les plus sucrées",
+  "infoContacto": [
+    { "icono": "fas fa-phone-alt", "label": "Téléphone", "valor": "+34 935 972 102", "href": "tel:+34935972102", "claseIcono": "" },
+    { "icono": "fas fa-envelope", "label": "E-mail", "valor": "gelateriadiamore@gmail.com", "href": "mailto:gelateriadiamore@gmail.com", "claseIcono": "" },
+    { "icono": "fab fa-whatsapp", "label": "WhatsApp", "valor": "+34 629 396 419", "href": "", "claseIcono": "whatsapp" },
+    { "icono": "fas fa-map-marker-alt", "label": "Adresse", "valor": "C. Granada, N.9, Málaga", "href": "/ubicacion", "claseIcono": "" }
+  ],
+  "horariosRapidos": [
+    { "temporada": "Été", "hora": "10:30 - 20:00" },
+    { "temporada": "Printemps", "hora": "11:00 - 20:00" },
+    { "temporada": "Hiver", "hora": "11:00 - 20:00" }
+  ],
+  "redesSociales": [
+    { "nombre": "Instagram", "icono": "fab fa-instagram", "href": "#", "clase": "instagram" },
+    { "nombre": "Facebook", "icono": "fab fa-facebook-f", "href": "#", "clase": "facebook" },
+    { "nombre": "TikTok", "icono": "fab fa-tiktok", "href": "#", "clase": "tiktok" }
+  ],
+  "opcionesAsunto": [
+    { "value": "", "label": "Sélectionnez une option" },
+    { "value": "consulta", "label": "Renseignement général" },
+    { "value": "pedido", "label": "Commande spéciale" },
+    { "value": "evento", "label": "Événement ou traiteur" },
+    { "value": "sugerencia", "label": "Suggestion" },
+    { "value": "queja", "label": "Réclamation" },
+    { "value": "otro", "label": "Autre" }
+  ]
+}

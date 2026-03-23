@@ -1,1 +1,11 @@
-/* Estilos usando Tailwind utilities en el template */
+.rrss-btn.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.rrss-btn.facebook {
+  background-color: #1877f2;
+}
+
+.rrss-btn.tiktok {
+  background-color: #010101;
+}

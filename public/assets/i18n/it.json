@@ -52,5 +52,25 @@
 
   "ubicacion.titulo": "Trovaci nel Cuore di Málaga",
   "ubicacion.direccion": "Calle Granada Nº9, Distretto Centro, 29015 Málaga",
-  "ubicacion.horarios_btn": "Orari"
+  "ubicacion.horarios_btn": "Orari",
+
+  "contacto.form_titulo": "Inviaci un messaggio",
+  "contacto.form_subtitulo": "Ti risponderemo il prima possibile",
+  "contacto.label_nombre": "Nome",
+  "contacto.placeholder_nombre": "Il tuo nome completo",
+  "contacto.label_email": "Email",
+  "contacto.placeholder_email": "tu@email.com",
+  "contacto.label_telefono": "Telefono",
+  "contacto.placeholder_telefono": "+34 600 000 000",
+  "contacto.label_asunto": "Oggetto",
+  "contacto.label_mensaje": "Messaggio",
+  "contacto.placeholder_mensaje": "Dicci come possiamo aiutarti...",
+  "contacto.btn_enviar": "Invia messaggio",
+  "contacto.btn_limpiar": "Cancella",
+  "contacto.info_titulo": "Contatto Diretto",
+  "contacto.horarios_titulo": "Orari",
+  "contacto.horarios_subtitulo": "Consulta i nostri orari in base alla stagione",
+  "contacto.horarios_btn": "Vedi orari completi",
+  "contacto.rrss_titulo": "Seguici",
+  "contacto.rrss_subtitulo": "Resta aggiornato sulle nostre novità"
 }

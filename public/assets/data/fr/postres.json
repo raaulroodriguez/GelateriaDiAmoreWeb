@@ -1,37 +1,159 @@
 {
   "postres": [
-    { "id": 1, "nombre": "Gaufre", "descripcion": "Gaufre chaude croustillante avec votre chocolat préféré", "imagen": "assets/img/bubble.png", "precio": "4,50€", "incluye": "Inclut le chocolat de votre choix", "destacado": false, "especial": false },
-    { "id": 2, "nombre": "Crêpe", "descripcion": "Crêpe moelleuse avec le chocolat de votre choix", "imagen": "assets/img/bubble.png", "precio": "4,50€", "incluye": "Inclut le chocolat de votre choix", "destacado": false, "especial": false },
-    { "id": 3, "nombre": "Pancakes", "descripcion": "2 pancakes américains moelleux avec crème et chocolat", "imagen": "assets/img/bubble.png", "precio": "5,00€", "incluye": "Inclut la crème et le chocolat de votre choix", "destacado": false, "especial": false },
-    { "id": 4, "nombre": "Bubble Waffle", "descripcion": "Gaufre en forme de cône, croustillante à l'extérieur et moelleuse à l'intérieur", "imagen": "assets/img/bubble.png", "precio": "5,00€", "incluye": "Inclut la crème et le chocolat de votre choix", "destacado": true, "especial": true }
+    {
+      "id": 1,
+      "nombre": "Gaufre",
+      "descripcion": "Gaufre chaude croustillante avec votre chocolat préféré",
+      "imagen": "assets/img/bubble.png",
+      "precio": "4,50€",
+      "incluye": "Inclut le chocolat de votre choix",
+      "destacado": false,
+      "especial": false
+    },
+    {
+      "id": 2,
+      "nombre": "Crêpe",
+      "descripcion": "Crêpe moelleuse avec le chocolat de votre choix",
+      "imagen": "assets/img/bubble.png",
+      "precio": "4,50€",
+      "incluye": "Inclut le chocolat de votre choix",
+      "destacado": false,
+      "especial": false
+    },
+    {
+      "id": 3,
+      "nombre": "Pancakes",
+      "descripcion": "2 pancakes américains moelleux avec crème et chocolat",
+      "imagen": "assets/img/bubble.png",
+      "precio": "5,00€",
+      "incluye": "Inclut la crème et le chocolat de votre choix",
+      "destacado": false,
+      "especial": false
+    },
+    {
+      "id": 4,
+      "nombre": "Bubble Waffle",
+      "descripcion": "Gaufre en forme de cône, croustillante à l'extérieur et moelleuse à l'intérieur",
+      "imagen": "assets/img/bubble.png",
+      "precio": "5,00€",
+      "incluye": "Inclut la crème et le chocolat de votre choix",
+      "destacado": true,
+      "especial": true
+    }
   ],
   "chocolates": [
-    { "id": 1, "nombre": "Nutella", "imagen": "https://images.unsplash.com/photo-1519420573924-65fcd45245f8?w=96&h=96&fit=crop&crop=center&auto=format&q=80" },
-    { "id": 2, "nombre": "Kinder", "imagen": "assets/img/kinder.jpg" },
-    { "id": 3, "nombre": "Lotus", "imagen": "assets/img/lotusSirope.png" },
-    { "id": 4, "nombre": "Chocolat au Lait", "imagen": "assets/img/leche.jpg" },
-    { "id": 5, "nombre": "Chocolat Blanc", "imagen": "assets/img/blanco.jpg" },
-    { "id": 6, "nombre": "Chocolat Noir", "imagen": "assets/img/negro.jpg" },
-    { "id": 7, "nombre": "Noir aux Noisettes", "imagen": "assets/img/negroAvellanas.jpg" }
+    {
+      "id": 1,
+      "nombre": "Nutella",
+      "imagen": "https://images.unsplash.com/photo-1519420573924-65fcd45245f8?w=96&h=96&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "id": 2,
+      "nombre": "Kinder",
+      "imagen": "assets/img/kinder.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Lotus",
+      "imagen": "assets/img/lotusSirope.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Chocolat au Lait",
+      "imagen": "assets/img/leche.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Chocolat Blanc",
+      "imagen": "assets/img/blanco.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Chocolat Noir",
+      "imagen": "assets/img/negro.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Noir aux Noisettes",
+      "imagen": "assets/img/negroAvellanas.jpg"
+    }
   ],
   "siropes": [
-    { "id": 1, "nombre": "Dulce de Leche", "imagen": "assets/img/dulceLeche.jpg" },
-    { "id": 2, "nombre": "Caramel", "imagen": "assets/img/caramelo.jpg" },
-    { "id": 3, "nombre": "Sirop de Vanille", "imagen": "https://images.unsplash.com/photo-1592788174877-3f99727fd23d?w=96&h=96&fit=crop&crop=center&auto=format&q=80" },
-    { "id": 4, "nombre": "Sirop de Fraise", "imagen": "assets/img/fresas.jpg" }
+    {
+      "id": 1,
+      "nombre": "Confiture de Lait",
+      "imagen": "assets/img/dulceLeche.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Caramel",
+      "imagen": "assets/img/caramelo.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Sirop de Vanille",
+      "imagen": "https://images.unsplash.com/photo-1592788174877-3f99727fd23d?w=96&h=96&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "id": 4,
+      "nombre": "Sirop de Fraise",
+      "imagen": "assets/img/fresas.jpg"
+    }
   ],
   "otros": [
-    { "id": 1, "nombre": "Sucre Glace", "imagen": "https://images.unsplash.com/photo-1710857389305-5cba9211033f?w=96&h=96&fit=crop&crop=center&auto=format&q=80" },
-    { "id": 2, "nombre": "Cannelle", "imagen": "https://images.unsplash.com/photo-1622798337764-259682f03741?w=96&h=96&fit=crop&crop=center&auto=format&q=80" }
+    {
+      "id": 1,
+      "nombre": "Sucre Glace",
+      "imagen": "https://images.unsplash.com/photo-1710857389305-5cba9211033f?w=96&h=96&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "id": 2,
+      "nombre": "Cannelle",
+      "imagen": "https://images.unsplash.com/photo-1622798337764-259682f03741?w=96&h=96&fit=crop&crop=center&auto=format&q=80"
+    }
   ],
   "extras": [
-    { "id": 1, "nombre": "Boule de Glace", "precio": "+2,00€", "descripcion": "Ajoutez une boule de n'importe lequel de nos parfums de glace", "nota": "Se marie parfaitement avec n'importe quel dessert", "icono": "fas fa-ice-cream" },
-    { "id": 2, "nombre": "Topping Supplémentaire", "precio": "+0,50€", "descripcion": "Ajoutez des toppings pour rendre votre dessert encore plus spécial", "nota": "Sirop, vermicelles, fruits à coque et plus encore", "icono": "fas fa-candy-cane" }
+    {
+      "id": 1,
+      "nombre": "Boule de Glace",
+      "precio": "+2,00€",
+      "descripcion": "Ajoutez une boule de n'importe lequel de nos parfums de glace",
+      "nota": "Se marie parfaitement avec n'importe quel dessert",
+      "icono": "fas fa-ice-cream"
+    },
+    {
+      "id": 2,
+      "nombre": "Topping Supplémentaire",
+      "precio": "+0,50€",
+      "descripcion": "Ajoutez des toppings pour rendre votre dessert encore plus spécial",
+      "nota": "Sirop, vermicelles, fruits à coque et plus encore",
+      "icono": "fas fa-candy-cane"
+    }
   ],
   "combinaciones": [
-    { "id": 1, "nombre": "La Confiable", "descripcion": "Gaufre avec Nutella + Boule de glace Kinder", "precio": "6,50€" },
-    { "id": 2, "nombre": "Pasión del Chocolate", "descripcion": "Crêpe avec Kinder + Boule de glace au Chocolat", "precio": "6,50€" },
-    { "id": 3, "nombre": "Capricho crujiente", "descripcion": "Bubble Waffle avec Lotus + Glace Lotus + Topping", "precio": "7,50€" },
-    { "id": 4, "nombre": "Desayuno Premium", "descripcion": "Pancakes avec Crème et Chocolat Blanc + Glace Vanille", "precio": "7€" }
+    {
+      "id": 1,
+      "nombre": "La Confiable",
+      "descripcion": "Gaufre avec Nutella + Boule de glace Kinder",
+      "precio": "6,50€"
+    },
+    {
+      "id": 2,
+      "nombre": "Pasión del Chocolate",
+      "descripcion": "Crêpe avec Kinder + Boule de glace au Chocolat",
+      "precio": "6,50€"
+    },
+    {
+      "id": 3,
+      "nombre": "Capricho crujiente",
+      "descripcion": "Bubble Waffle avec Lotus + Glace Lotus + Topping",
+      "precio": "7,50€"
+    },
+    {
+      "id": 4,
+      "nombre": "Desayuno Premium",
+      "descripcion": "Pancakes avec Crème et Chocolat Blanc + Glace Vanille",
+      "precio": "7€"
+    }
   ]
 }

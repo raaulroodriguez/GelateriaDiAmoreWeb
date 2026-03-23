@@ -52,5 +52,25 @@
 
   "ubicacion.titulo": "Find Us in the Heart of Málaga",
   "ubicacion.direccion": "Calle Granada Nº9, Centro District, 29015 Málaga",
-  "ubicacion.horarios_btn": "Opening Hours"
+  "ubicacion.horarios_btn": "Opening Hours",
+
+  "contacto.form_titulo": "Send Us a Message",
+  "contacto.form_subtitulo": "We'll get back to you as soon as possible",
+  "contacto.label_nombre": "Name",
+  "contacto.placeholder_nombre": "Your full name",
+  "contacto.label_email": "Email",
+  "contacto.placeholder_email": "you@email.com",
+  "contacto.label_telefono": "Phone",
+  "contacto.placeholder_telefono": "+34 600 000 000",
+  "contacto.label_asunto": "Subject",
+  "contacto.label_mensaje": "Message",
+  "contacto.placeholder_mensaje": "Tell us how we can help you...",
+  "contacto.btn_enviar": "Send message",
+  "contacto.btn_limpiar": "Clear",
+  "contacto.info_titulo": "Direct Contact",
+  "contacto.horarios_titulo": "Opening Hours",
+  "contacto.horarios_subtitulo": "Check our opening hours by season",
+  "contacto.horarios_btn": "See full schedule",
+  "contacto.rrss_titulo": "Follow Us",
+  "contacto.rrss_subtitulo": "Stay up to date with our latest news"
 }

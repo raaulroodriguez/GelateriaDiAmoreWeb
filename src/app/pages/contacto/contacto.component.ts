@@ -1,13 +1,15 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NgClass } from '@angular/common';
 import { DataService } from '../../core/services/data.service';
 import { DivisorComponent } from '../../shared/components/divisor/divisor.component';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 import { ContactoData } from '../../models/interfaces';
 
 @Component({
   selector: 'app-contacto',
-  imports: [RouterLink, FormsModule, DivisorComponent],
+  imports: [RouterLink, FormsModule, DivisorComponent, TranslatePipe, NgClass],
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css'
 })
