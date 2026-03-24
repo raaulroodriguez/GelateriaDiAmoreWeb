@@ -13,8 +13,7 @@
       "parrafos": ["Gelateria Di Amore è una gelateria artigianale italiana situata in:"],
       "lista": [
         "<strong>Indirizzo:</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
-        "<strong>E-mail:</strong> gelateriadiamore@gmail.com",
-        "<strong>Telefono:</strong> +34 935 972 102"
+        "<strong>E-mail:</strong> infogelateriadiamore@gmail.com",
       ]
     },
     {
@@ -62,8 +61,7 @@
       "h2": "8. Contatto",
       "parrafos": ["Per qualsiasi domanda relativa a queste Condizioni Generali d'Uso, è possibile contattarci a:"],
       "lista": [
-        "<strong>E-mail:</strong> gelateriadiamore@gmail.com",
-        "<strong>Telefono:</strong> +34 935 972 102",
+        "<strong>E-mail:</strong> infogelateriadiamore@gmail.com",
         "<strong>Indirizzo:</strong> Calle Granada, N.9, 29015 Málaga"
       ],
       "parrafosPost": ["È possibile utilizzare anche il nostro <a href=\"/contacto\">modulo di contatto</a>."]

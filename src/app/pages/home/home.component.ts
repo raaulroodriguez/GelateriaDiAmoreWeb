@@ -25,10 +25,24 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     const video = this.bgVideoRef?.nativeElement;
-    if (video) {
-      video.muted = true;
-      video.volume = 0;
-    }
+    if (!video) return;
+
+    video.muted = true;
+    video.volume = 0;
+
+    const recover = () => {
+      const t = video.currentTime;
+      video.load();
+      video.currentTime = t;
+      video.play().catch(() => {});
+    };
+
+    video.addEventListener('stalled', recover);
+    video.addEventListener('waiting', () => {
+      setTimeout(() => {
+        if (video.readyState < 3) recover();
+      }, 3000);
+    });
   }
 
   getPasionParagraphs(texto: string): string[] {

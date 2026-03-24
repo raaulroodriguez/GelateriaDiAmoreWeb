@@ -13,8 +13,7 @@
       "parrafos": ["Gelateria Di Amore is an artisan Italian ice cream shop located at:"],
       "lista": [
         "<strong>Address:</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
-        "<strong>Email:</strong> gelateriadiamore@gmail.com",
-        "<strong>Phone:</strong> +34 935 972 102"
+        "<strong>Email:</strong> infogelateriadiamore@gmail.com",
       ]
     },
     {
@@ -62,8 +61,7 @@
       "h2": "8. Contact",
       "parrafos": ["If you have any questions about these Terms and Conditions, you can contact us at:"],
       "lista": [
-        "<strong>Email:</strong> gelateriadiamore@gmail.com",
-        "<strong>Phone:</strong> +34 935 972 102",
+        "<strong>Email:</strong> infogelateriadiamore@gmail.com",
         "<strong>Address:</strong> Calle Granada, N.9, 29015 Málaga"
       ],
       "parrafosPost": ["You can also use our <a href=\"/contacto\">contact form</a>."]

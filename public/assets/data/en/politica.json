@@ -7,8 +7,7 @@
       "lista": [
         "<strong>Name:</strong> Gelateria Di Amore",
         "<strong>Address:</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
-        "<strong>Email:</strong> gelateriadiamore@gmail.com",
-        "<strong>Phone:</strong> +34 935 972 102"
+        "<strong>Email:</strong> infogelateriadiamore@gmail.com",
       ]
     },
     {
@@ -52,7 +51,7 @@
         "<strong>Objection:</strong> object to the processing of your data in certain circumstances."
       ],
       "parrafosPost": [
-        "To exercise any of these rights, please write to us at gelateriadiamore@gmail.com stating your request. You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href=\"https://ico.org.uk\" target=\"_blank\" rel=\"noopener noreferrer\">ico.org.uk</a>."
+        "To exercise any of these rights, please write to us at infogelateriadiamore@gmail.com stating your request. You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href=\"https://ico.org.uk\" target=\"_blank\" rel=\"noopener noreferrer\">ico.org.uk</a>."
       ]
     },
     {
@@ -74,7 +73,7 @@
       "h2": "8. Contact",
       "parrafos": ["If you have any questions about our Privacy Policy or wish to exercise your rights, you can contact us at:"],
       "lista": [
-        "<strong>Email:</strong> gelateriadiamore@gmail.com",
+        "<strong>Email:</strong> infogelateriadiamore@gmail.com",
         "<strong>Address:</strong> Calle Granada, N.9, 29015 Málaga"
       ],
       "parrafosPost": ["You can also use our <a href=\"/contacto\">contact form</a>."]

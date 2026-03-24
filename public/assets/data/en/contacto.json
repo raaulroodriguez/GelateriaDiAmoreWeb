@@ -2,9 +2,9 @@
   "titulo": "Let's Talk!",
   "subtitulo": "Got a question, suggestion, or want to place a special order? We're here to help and make your sweetest dreams come true",
   "infoContacto": [
-    { "icono": "fas fa-phone-alt", "label": "Phone", "valor": "+34 935 972 102", "href": "tel:+34935972102", "claseIcono": "" },
-    { "icono": "fas fa-envelope", "label": "Email", "valor": "gelateriadiamore@gmail.com", "href": "mailto:gelateriadiamore@gmail.com", "claseIcono": "" },
-    { "icono": "fab fa-whatsapp", "label": "WhatsApp", "valor": "+34 629 396 419", "href": "", "claseIcono": "whatsapp" },
+    { "icono": "fas fa-phone-alt", "label": "Phone", "valor": "Próximamente", "href": "tel:+34935972102", "claseIcono": "" },
+    { "icono": "fas fa-envelope", "label": "Email", "valor": "infogelateriadiamore@gmail.com", "href": "mailto:infogelateriadiamore@gmail.com", "claseIcono": "" },
+    { "icono": "fab fa-whatsapp", "label": "WhatsApp", "valor": "Próximamente", "href": "", "claseIcono": "whatsapp" },
     { "icono": "fas fa-map-marker-alt", "label": "Address", "valor": "C. Granada, N.9, Málaga", "href": "/ubicacion", "claseIcono": "" }
   ],
   "horariosRapidos": [

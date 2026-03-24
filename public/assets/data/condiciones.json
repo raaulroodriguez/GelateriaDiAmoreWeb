@@ -13,8 +13,7 @@
       "parrafos": ["Gelateria Di Amore es un establecimiento de heladería artesanal italiana situado en:"],
       "lista": [
         "<strong>Dirección:</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
-        "<strong>Email:</strong> gelateriadiamore@gmail.com",
-        "<strong>Teléfono:</strong> +34 935 972 102"
+        "<strong>Email:</strong> infogelateriadiamore@gmail.com",
       ]
     },
     {
@@ -62,8 +61,7 @@
       "h2": "8. Contacto",
       "parrafos": ["Si tiene alguna pregunta sobre estos Términos y Condiciones, puede ponerse en contacto con nosotros a través de:"],
       "lista": [
-        "<strong>Email:</strong> gelateriadiamore@gmail.com",
-        "<strong>Teléfono:</strong> +34 935 972 102",
+        "<strong>Email:</strong> infogelateriadiamore@gmail.com",
         "<strong>Dirección:</strong> Calle Granada, N.9, 29015 Málaga"
       ],
       "parrafosPost": ["También puede utilizar nuestro <a href=\"/contacto\">formulario de contacto</a>."]
