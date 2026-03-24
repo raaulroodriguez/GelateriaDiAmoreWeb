@@ -11,10 +11,12 @@ import { map } from 'rxjs/operators';
 // ──────────────────────────────────────────────────────────────────────────────
 // En local crea src/environments/emailjs.env.ts con las mismas variables.
 // Los valores de abajo son los de producción (leer desde el HTML meta o env).
-const PUBLIC_KEY    = (window as any).__EMAILJS_PUBLIC_KEY__    || 'YOUR_PUBLIC_KEY';
-const SERVICE_ID    = (window as any).__EMAILJS_SERVICE_ID__    || 'YOUR_SERVICE_ID';
-const TPL_CONTACT   = (window as any).__EMAILJS_TPL_CONTACT__   || 'template_contact';
-const TPL_CANDIDATURA = (window as any).__EMAILJS_TPL_TRABAJA__ || 'template_trabaja';
+const PUBLIC_KEY      = (window as any).__EMAILJS_PUBLIC_KEY__    || 'E6ZQ6zEGuqfF9izH-';
+const SERVICE_ID      = (window as any).__EMAILJS_SERVICE_ID__    || 'service_7610bv4';
+const TPL_CONTACT     = (window as any).__EMAILJS_TPL_CONTACT__   || 'template_75ed9r2';
+const TPL_CANDIDATURA = (window as any).__EMAILJS_TPL_TRABAJA__   || 'template_5ges79t';
+
+emailjs.init({ publicKey: PUBLIC_KEY });
 
 @Injectable({ providedIn: 'root' })
 export class EmailService {
@@ -33,7 +35,7 @@ export class EmailService {
       asunto:     data.asunto   || '—',
       mensaje:    data.mensaje,
     };
-    return from(emailjs.send(SERVICE_ID, TPL_CONTACT, params, PUBLIC_KEY))
+    return from(emailjs.send(SERVICE_ID, TPL_CONTACT, params))
       .pipe(map(() => ({ ok: true })));
   }
 
@@ -57,7 +59,7 @@ export class EmailService {
       experiencia:    data.experiencia    || '—',
       motivacion:     data.motivacion     || '—',
     };
-    return from(emailjs.send(SERVICE_ID, TPL_CANDIDATURA, params, PUBLIC_KEY))
+    return from(emailjs.send(SERVICE_ID, TPL_CANDIDATURA, params))
       .pipe(map(() => ({ ok: true })));
   }
 }
