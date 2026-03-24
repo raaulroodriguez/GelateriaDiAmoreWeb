@@ -111,15 +111,11 @@
           }
 
           <div class="flex gap-4 flex-col sm:flex-row mt-6">
-            <button type="submit" [disabled]="sending()"
-              class="btn-primary flex-1 disabled:opacity-60 disabled:cursor-not-allowed">
-              @if (sending()) {
-                <i class="fas fa-spinner fa-spin"></i> {{ 'contacto.btn_enviando' | translate }}
-              } @else {
-                <i class="fas fa-paper-plane"></i> {{ 'contacto.btn_enviar' | translate }}
-              }
+            <button type="submit" [disabled]="sending()" class="btn-primary btn-form flex-1 gap-2">
+              <i [class]="sending() ? 'fas fa-spinner fa-spin' : 'fas fa-paper-plane'"></i>
+              {{ (sending() ? 'contacto.btn_enviando' : 'contacto.btn_enviar') | translate }}
             </button>
-            <button type="reset" [disabled]="sending()" class="btn-secondary flex-1 disabled:opacity-60 disabled:cursor-not-allowed">
+            <button type="reset" [disabled]="sending()" class="btn-secondary btn-form flex-1 gap-2">
               <i class="fas fa-undo"></i> {{ 'contacto.btn_limpiar' | translate }}
             </button>
           </div>
