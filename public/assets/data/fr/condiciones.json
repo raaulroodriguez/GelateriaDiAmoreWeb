@@ -1,0 +1,77 @@
+{
+  "titulo": "Conditions d'Utilisation",
+  "secciones": [
+    {
+      "h2": "1. Acceptation des Conditions",
+      "parrafos": [
+        "En accédant au site web de Gelateria Di Amore et en l'utilisant, vous acceptez d'être lié par ces Conditions Générales d'Utilisation. Si vous n'acceptez pas l'une de ces conditions, nous vous prions de ne pas utiliser notre site web.",
+        "Nous nous réservons le droit de modifier ces conditions à tout moment. Les modifications prendront effet dès leur publication sur le site web. Il vous incombe de consulter régulièrement ces conditions."
+      ]
+    },
+    {
+      "h2": "2. Informations sur l'Entreprise",
+      "parrafos": ["Gelateria Di Amore est une gelateria artisanale italienne située à :"],
+      "lista": [
+        "<strong>Adresse :</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
+        "<strong>E-mail :</strong> gelateriadiamore@gmail.com",
+        "<strong>Téléphone :</strong> +34 935 972 102"
+      ]
+    },
+    {
+      "h2": "3. Utilisation du Site Web",
+      "parrafos": [
+        "Ce site web a pour vocation de fournir des informations sur nos produits, nos horaires, notre emplacement et nos services. L'utilisation du site est autorisée uniquement à des fins licites et conformément à la réglementation en vigueur.",
+        "Sont expressément interdits :"
+      ],
+      "lista": [
+        "Utiliser le site à des fins illégales ou frauduleuses.",
+        "Tenter d'accéder sans autorisation à des systèmes ou réseaux liés au site.",
+        "Reproduire, distribuer ou modifier le contenu sans autorisation expresse.",
+        "Transmettre des virus, des logiciels malveillants ou tout autre code nuisible via le site."
+      ]
+    },
+    {
+      "h2": "4. Produits et Disponibilité",
+      "parrafos": [
+        "Les produits présentés sur ce site web ont un caractère informatif. La disponibilité des parfums et des produits peut varier selon la saison, la date et le stock du jour.",
+        "Nous nous réservons le droit de modifier, d'arrêter ou de remplacer tout produit sans préavis. Les prix indiqués peuvent être modifiés sans notification préalable."
+      ]
+    },
+    {
+      "h2": "5. Allergènes et Informations Alimentaires",
+      "parrafos": [
+        "Nos produits peuvent contenir ou avoir été en contact avec des allergènes courants tels que les fruits à coque, le gluten, les produits laitiers, les œufs et d'autres. Si vous avez une allergie ou une intolérance alimentaire, nous vous recommandons de consulter notre personnel avant de passer commande.",
+        "Gelateria Di Amore décline toute responsabilité en cas de réactions allergiques résultant de la consommation de produits sans avoir préalablement informé notre personnel de vos allergies."
+      ]
+    },
+    {
+      "h2": "6. Propriété Intellectuelle",
+      "parrafos": [
+        "Tous les contenus de ce site web, y compris les textes, images, logos, designs et codes sources, sont la propriété de Gelateria Di Amore ou de ses fournisseurs de contenu, et sont protégés par les lois applicables en matière de propriété intellectuelle.",
+        "La reproduction totale ou partielle de ces contenus sans l'autorisation expresse et écrite de Gelateria Di Amore est interdite."
+      ]
+    },
+    {
+      "h2": "7. Limitation de Responsabilité",
+      "parrafos": [
+        "Gelateria Di Amore ne garantit pas la disponibilité ininterrompue du site web ni l'absence d'erreurs dans ses contenus. En aucun cas nous ne serons responsables des dommages directs, indirects, accessoires ou consécutifs découlant de l'utilisation ou de l'impossibilité d'utiliser le site.",
+        "Les liens vers des sites web tiers figurant sur ce site sont fournis à titre de référence uniquement. Nous n'exerçons aucun contrôle sur ces sites et déclinons toute responsabilité quant à leur contenu ou leur fonctionnement."
+      ]
+    },
+    {
+      "h2": "8. Contact",
+      "parrafos": ["Si vous avez des questions concernant ces Conditions Générales d'Utilisation, vous pouvez nous contacter à :"],
+      "lista": [
+        "<strong>E-mail :</strong> gelateriadiamore@gmail.com",
+        "<strong>Téléphone :</strong> +34 935 972 102",
+        "<strong>Adresse :</strong> Calle Granada, N.9, 29015 Málaga"
+      ],
+      "parrafosPost": ["Vous pouvez également utiliser notre <a href=\"/contacto\">formulaire de contact</a>."]
+    }
+  ],
+  "enlaces": [
+    { "texto": "Politique de Confidentialité", "routerLink": "/politica" },
+    { "texto": "Politique de Cookies", "routerLink": "/cookies" },
+    { "texto": "Retour à l'accueil", "routerLink": "/" }
+  ]
+}

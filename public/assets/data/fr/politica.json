@@ -1,0 +1,88 @@
+{
+  "titulo": "Politique de Confidentialité",
+  "secciones": [
+    {
+      "h2": "1. Responsable du Traitement",
+      "parrafos": ["Conformément au Règlement (UE) 2016/679 du Parlement européen (RGPD), nous vous informons que le responsable du traitement de vos données personnelles est :"],
+      "lista": [
+        "<strong>Dénomination :</strong> Gelateria Di Amore",
+        "<strong>Adresse :</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
+        "<strong>E-mail :</strong> gelateriadiamore@gmail.com",
+        "<strong>Téléphone :</strong> +34 935 972 102"
+      ]
+    },
+    {
+      "h2": "2. Données que Nous Collectons",
+      "parrafos": ["Nous pouvons collecter les données personnelles suivantes lorsque vous interagissez avec notre site web ou nous contactez :"],
+      "lista": [
+        "<strong>Données d'identification :</strong> prénom et nom de famille.",
+        "<strong>Données de contact :</strong> adresse e-mail et numéro de téléphone.",
+        "<strong>Données de navigation :</strong> adresse IP, type de navigateur, pages visitées et durée de visite (via des cookies techniques).",
+        "<strong>Données de candidature :</strong> curriculum vitae, expérience professionnelle et lettre de motivation, lors d'une candidature à un poste."
+      ]
+    },
+    {
+      "h2": "3. Finalités du Traitement",
+      "parrafos": ["Nous traitons vos données personnelles aux fins suivantes :"],
+      "lista": [
+        "Gérer et répondre à vos demandes soumises via le formulaire de contact.",
+        "Évaluer les candidatures reçues via le formulaire de recrutement.",
+        "Analyser l'utilisation du site web afin d'en améliorer le fonctionnement et le contenu.",
+        "Respecter les obligations légales applicables."
+      ]
+    },
+    {
+      "h2": "4. Base Légale du Traitement",
+      "parrafos": ["Le traitement de vos données repose sur les bases légales suivantes :"],
+      "lista": [
+        "<strong>Consentement :</strong> lorsque vous remplissez et envoyez nos formulaires, en donnant votre consentement explicite.",
+        "<strong>Intérêt légitime :</strong> pour l'analyse de navigation et l'amélioration du site web.",
+        "<strong>Obligation légale :</strong> lorsque cela est exigé par la réglementation applicable."
+      ]
+    },
+    {
+      "h2": "5. Droits des Utilisateurs",
+      "parrafos": ["En vertu de la réglementation sur la protection des données, vous disposez des droits suivants :"],
+      "lista": [
+        "<strong>Accès :</strong> savoir quelles données personnelles vous concernant nous traitons.",
+        "<strong>Rectification :</strong> corriger des données inexactes ou incomplètes.",
+        "<strong>Suppression :</strong> demander l'effacement de vos données lorsqu'elles ne sont plus nécessaires.",
+        "<strong>Limitation :</strong> demander que nous limitions le traitement de vos données dans certaines situations.",
+        "<strong>Portabilité :</strong> recevoir vos données dans un format structuré et couramment utilisé.",
+        "<strong>Opposition :</strong> vous opposer au traitement de vos données dans certaines circonstances."
+      ],
+      "parrafosPost": [
+        "Pour exercer l'un de ces droits, écrivez-nous à gelateriadiamore@gmail.com en précisant votre demande. Vous avez également le droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) à <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">www.cnil.fr</a>."
+      ]
+    },
+    {
+      "h2": "6. Conservation des Données",
+      "parrafos": ["Nous conserverons vos données personnelles pendant le temps nécessaire à l'accomplissement de la finalité pour laquelle elles ont été collectées :"],
+      "lista": [
+        "Données de contact et demandes : jusqu'à 2 ans à compter de la dernière communication.",
+        "Candidatures : jusqu'à 1 an à compter de leur réception, sauf si vous demandez leur suppression avant.",
+        "Données de navigation : selon ce qui est indiqué dans notre <a href=\"/cookies\">Politique de Cookies</a>."
+      ]
+    },
+    {
+      "h2": "7. Sécurité des Données",
+      "parrafos": [
+        "Nous appliquons des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, perte, altération ou divulgation accidentelle. Cependant, aucune transmission de données sur internet ne peut être garantie comme étant totalement sécurisée."
+      ]
+    },
+    {
+      "h2": "8. Contact",
+      "parrafos": ["Si vous avez des questions concernant notre Politique de Confidentialité ou souhaitez exercer vos droits, vous pouvez nous contacter à :"],
+      "lista": [
+        "<strong>E-mail :</strong> gelateriadiamore@gmail.com",
+        "<strong>Adresse :</strong> Calle Granada, N.9, 29015 Málaga"
+      ],
+      "parrafosPost": ["Vous pouvez également utiliser notre <a href=\"/contacto\">formulaire de contact</a>."]
+    }
+  ],
+  "enlaces": [
+    { "texto": "Conditions d'Utilisation", "routerLink": "/condiciones" },
+    { "texto": "Politique de Cookies", "routerLink": "/cookies" },
+    { "texto": "Retour à l'accueil", "routerLink": "/" }
+  ]
+}

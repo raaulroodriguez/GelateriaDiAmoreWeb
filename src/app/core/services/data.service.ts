@@ -13,7 +13,8 @@ import {
   FaqData,
   ContactoData,
   HomeData,
-  NavegacionData
+  NavegacionData,
+  LegalPageData
 } from '../../models/interfaces';
 
 @Injectable({
@@ -81,5 +82,17 @@ export class DataService {
 
   getNavegacion(): Observable<NavegacionData> {
     return this.getData<NavegacionData>('navegacion.json');
+  }
+
+  getCondiciones(): Observable<LegalPageData> {
+    return this.getData<LegalPageData>('condiciones.json');
+  }
+
+  getPolitica(): Observable<LegalPageData> {
+    return this.getData<LegalPageData>('politica.json');
+  }
+
+  getCookies(): Observable<LegalPageData> {
+    return this.getData<LegalPageData>('cookies.json');
   }
 }

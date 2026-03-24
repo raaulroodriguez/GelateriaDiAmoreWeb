@@ -1,3 +1,23 @@
+export interface LegalSeccion {
+  h2: string;
+  nivel?: 2 | 3;
+  parrafos?: string[];
+  lista?: string[];
+  parrafosPost?: string[];
+}
+
+export interface LegalEnlace {
+  texto: string;
+  routerLink?: string;
+  href?: string;
+}
+
+export interface LegalPageData {
+  titulo: string;
+  secciones: LegalSeccion[];
+  enlaces: LegalEnlace[];
+}
+
 export interface Alergeno {
   tipo: string;
   titulo: string;

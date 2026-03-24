@@ -1,0 +1,84 @@
+{
+  "titulo": "Cookie Policy",
+  "secciones": [
+    {
+      "h2": "1. What are Cookies?",
+      "parrafos": [
+        "Cookies are small text files that are stored on your device (computer, tablet or mobile) when you visit a website. They allow the site to remember your actions and preferences over a period of time, so you do not have to re-enter them each time you visit the site or browse from one page to another.",
+        "Cookies are not viruses or malware: they are simply data files that enhance your browsing experience."
+      ]
+    },
+    {
+      "h2": "2. Types of Cookies We Use",
+      "parrafos": ["On the Gelateria Di Amore website we use the following types of cookies:"]
+    },
+    {
+      "h2": "Technical or Necessary Cookies",
+      "nivel": 3,
+      "parrafos": ["These are essential for the correct operation of the website. Without them, some services would not be available. They do not collect personally identifiable information and do not require your consent."],
+      "lista": [
+        "<strong>session_id:</strong> Keeps the session active during your visit. Duration: session.",
+        "<strong>cookie_consent:</strong> Records your cookie preference. Duration: 1 year."
+      ]
+    },
+    {
+      "h2": "Analytics or Statistics Cookies",
+      "nivel": 3,
+      "parrafos": ["These allow us to understand how users interact with the website in order to improve its performance. The information they collect is anonymous and aggregated."],
+      "lista": [
+        "<strong>_ga, _gid:</strong> Google Analytics cookies used to analyse site traffic. Duration: up to 2 years.",
+        "<strong>_gat:</strong> Limits the request rate to Google Analytics. Duration: 1 minute."
+      ]
+    },
+    {
+      "h2": "Preference or Functionality Cookies",
+      "nivel": 3,
+      "parrafos": ["These allow the website to remember your choices (such as language or region) and provide enhanced, more personalised functionality."],
+      "lista": [
+        "<strong>lang_pref:</strong> Saves the user's preferred language. Duration: 30 days."
+      ]
+    },
+    {
+      "h2": "Third-party Cookies",
+      "nivel": 3,
+      "parrafos": ["Some features of our website use third-party services that may install their own cookies:"],
+      "lista": [
+        "<strong>Google Maps:</strong> We use Google Maps to display our location. Google may install its own cookies. Please see <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Google's privacy policy</a>.",
+        "<strong>Social media:</strong> Share buttons for social media platforms (Instagram, Facebook, TikTok) may install cookies from those platforms."
+      ]
+    },
+    {
+      "h2": "3. How to Manage Cookies?",
+      "parrafos": ["You can configure your browser to accept, reject or delete cookies. Below you will find instructions for the main browsers:"],
+      "lista": [
+        "<strong>Google Chrome:</strong> Menu > Settings > Privacy and security > Cookies and other site data.",
+        "<strong>Mozilla Firefox:</strong> Menu > Options > Privacy & Security > Cookies and Site Data.",
+        "<strong>Safari:</strong> Preferences > Privacy > Cookies and website data.",
+        "<strong>Microsoft Edge:</strong> Menu > Settings > Privacy, search and services > Cookies."
+      ],
+      "parrafosPost": ["Please note that disabling certain cookies may affect the functioning of the website and your browsing experience."]
+    },
+    {
+      "h2": "4. Consent",
+      "parrafos": ["By continuing to browse our website without changing your cookie settings, you accept the use of cookies as described in this policy. You may withdraw your consent at any time by configuring your browser to reject cookies or by deleting those already installed."]
+    },
+    {
+      "h2": "5. Policy Updates",
+      "parrafos": ["We may update our Cookie Policy periodically to reflect changes in the cookies we use or for other operational, legal or regulatory reasons. We recommend that you visit this page regularly to stay informed about our use of cookies."]
+    },
+    {
+      "h2": "6. Contact",
+      "parrafos": ["If you have any questions about our Cookie Policy, you can contact us at:"],
+      "lista": [
+        "<strong>Email:</strong> gelateriadiamore@gmail.com",
+        "<strong>Address:</strong> Calle Granada, N.9, 29015 Málaga"
+      ],
+      "parrafosPost": ["You can also use our <a href=\"/contacto\">contact form</a>."]
+    }
+  ],
+  "enlaces": [
+    { "texto": "Terms of Use", "routerLink": "/condiciones" },
+    { "texto": "Privacy Policy", "routerLink": "/politica" },
+    { "texto": "Back to home", "routerLink": "/" }
+  ]
+}

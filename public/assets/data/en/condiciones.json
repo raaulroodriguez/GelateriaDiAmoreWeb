@@ -1,0 +1,77 @@
+{
+  "titulo": "Terms of Use",
+  "secciones": [
+    {
+      "h2": "1. Acceptance of Terms",
+      "parrafos": [
+        "By accessing and using the Gelateria Di Amore website, you agree to be bound by these Terms and Conditions of Use. If you do not agree with any of these terms, please refrain from using our website.",
+        "We reserve the right to modify these terms at any time. Modifications will take effect upon publication on the website. It is your responsibility to review these terms periodically."
+      ]
+    },
+    {
+      "h2": "2. Company Information",
+      "parrafos": ["Gelateria Di Amore is an artisan Italian ice cream shop located at:"],
+      "lista": [
+        "<strong>Address:</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España",
+        "<strong>Email:</strong> gelateriadiamore@gmail.com",
+        "<strong>Phone:</strong> +34 935 972 102"
+      ]
+    },
+    {
+      "h2": "3. Website Use",
+      "parrafos": [
+        "This website is intended to provide information about our products, opening hours, location and services. Use of the site is permitted solely for lawful purposes and in accordance with applicable regulations.",
+        "The following are expressly prohibited:"
+      ],
+      "lista": [
+        "Using the site for illegal or fraudulent activities.",
+        "Attempting to gain unauthorised access to systems or networks linked to the site.",
+        "Reproducing, distributing or modifying content without express authorisation.",
+        "Transmitting viruses, malware or other harmful code through the site."
+      ]
+    },
+    {
+      "h2": "4. Products and Availability",
+      "parrafos": [
+        "The products displayed on this website are for informational purposes. The availability of flavours and products may vary depending on the season, date and daily stock.",
+        "We reserve the right to modify, discontinue or replace any product without prior notice. Prices indicated may be subject to change without prior notification."
+      ]
+    },
+    {
+      "h2": "5. Allergies and Food Information",
+      "parrafos": [
+        "Our products may contain or have been in contact with common allergens such as nuts, gluten, dairy, eggs and others. If you have any food allergy or intolerance, we recommend consulting with our staff before placing any order.",
+        "Gelateria Di Amore accepts no responsibility for allergic reactions resulting from the consumption of products without having previously informed our staff of your allergies."
+      ]
+    },
+    {
+      "h2": "6. Intellectual Property",
+      "parrafos": [
+        "All content on this website, including texts, images, logos, designs and source code, is the property of Gelateria Di Amore or its content providers, and is protected by applicable intellectual property laws.",
+        "The total or partial reproduction of this content without the express written authorisation of Gelateria Di Amore is prohibited."
+      ]
+    },
+    {
+      "h2": "7. Limitation of Liability",
+      "parrafos": [
+        "Gelateria Di Amore does not guarantee the uninterrupted availability of the website or the absence of errors in its content. Under no circumstances shall we be liable for direct, indirect, incidental or consequential damages arising from the use or inability to use the site.",
+        "Links to third-party websites included on this site are provided for reference purposes only. We have no control over such sites and accept no responsibility for their content or operation."
+      ]
+    },
+    {
+      "h2": "8. Contact",
+      "parrafos": ["If you have any questions about these Terms and Conditions, you can contact us at:"],
+      "lista": [
+        "<strong>Email:</strong> gelateriadiamore@gmail.com",
+        "<strong>Phone:</strong> +34 935 972 102",
+        "<strong>Address:</strong> Calle Granada, N.9, 29015 Málaga"
+      ],
+      "parrafosPost": ["You can also use our <a href=\"/contacto\">contact form</a>."]
+    }
+  ],
+  "enlaces": [
+    { "texto": "Privacy Policy", "routerLink": "/politica" },
+    { "texto": "Cookie Policy", "routerLink": "/cookies" },
+    { "texto": "Back to home", "routerLink": "/" }
+  ]
+}

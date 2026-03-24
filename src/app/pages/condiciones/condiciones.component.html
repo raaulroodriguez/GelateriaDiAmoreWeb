@@ -1,104 +1,45 @@
-<main class="main-legal">
-  <div class="container-legal">
-    <h1>Condiciones de Uso</h1>
+@if (pageData(); as data) {
+  <main class="main-legal">
+    <div class="container-legal">
+      <h1>{{ data.titulo }}</h1>
 
-    <section class="seccion-legal">
-      <h2>1. Aceptación de los Términos</h2>
-      <p>
-        Al acceder y utilizar el sitio web de Gelateria Di Amore, usted acepta quedar vinculado por estos Términos y Condiciones de Uso. Si no está de acuerdo con alguno de estos términos, le rogamos que no utilice nuestro sitio web.
-      </p>
-      <p>
-        Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones entrarán en vigor en el momento de su publicación en el sitio web. Es su responsabilidad revisar periódicamente estos términos.
-      </p>
-    </section>
+      @for (seccion of data.secciones; track seccion.h2) {
+        <section class="seccion-legal">
+          @if ((seccion.nivel ?? 2) === 3) {
+            <h3>{{ seccion.h2 }}</h3>
+          } @else {
+            <h2>{{ seccion.h2 }}</h2>
+          }
 
-    <section class="seccion-legal">
-      <h2>2. Información de la Empresa</h2>
-      <p>
-        Gelateria Di Amore es un establecimiento de heladería artesanal italiana situado en:
-      </p>
-      <ul>
-        <li><strong>Dirección:</strong> Calle Granada, N.9, Distrito Centro, 29015 Málaga, España</li>
-        <li><strong>Email:</strong> gelateriadiamore&#64;gmail.com</li>
-        <li><strong>Teléfono:</strong> +34 935 972 102</li>
-      </ul>
-    </section>
+          @for (p of (seccion.parrafos ?? []); track p) {
+            <p [innerHTML]="p"></p>
+          }
 
-    <section class="seccion-legal">
-      <h2>3. Uso del Sitio Web</h2>
-      <p>
-        Este sitio web tiene como finalidad proporcionar información sobre nuestros productos, horarios, ubicación y servicios. El uso del sitio está permitido únicamente con fines lícitos y de acuerdo con la normativa vigente.
-      </p>
-      <p>Queda expresamente prohibido:</p>
-      <ul>
-        <li>Utilizar el sitio para actividades ilegales o fraudulentas.</li>
-        <li>Intentar acceder sin autorización a sistemas o redes vinculados al sitio.</li>
-        <li>Reproducir, distribuir o modificar el contenido sin autorización expresa.</li>
-        <li>Transmitir virus, malware u otro código dañino a través del sitio.</li>
-      </ul>
-    </section>
+          @if (seccion.lista && seccion.lista.length > 0) {
+            <ul>
+              @for (item of seccion.lista; track item) {
+                <li [innerHTML]="item"></li>
+              }
+            </ul>
+          }
 
-    <section class="seccion-legal">
-      <h2>4. Productos y Disponibilidad</h2>
-      <p>
-        Los productos mostrados en este sitio web son de carácter informativo. La disponibilidad de sabores y productos puede variar según la temporada, la fecha y las existencias del día.
-      </p>
-      <p>
-        Nos reservamos el derecho de modificar, descontinuar o sustituir cualquier producto sin previo aviso. Los precios indicados pueden estar sujetos a cambios sin notificación previa.
-      </p>
-    </section>
+          @for (p of (seccion.parrafosPost ?? []); track p) {
+            <p [innerHTML]="p"></p>
+          }
+        </section>
+      }
 
-    <section class="seccion-legal">
-      <h2>5. Alergias e Información Alimentaria</h2>
-      <p>
-        Nuestros productos pueden contener o haber estado en contacto con alérgenos comunes como frutos secos, gluten, lácteos, huevos y otros. Si tiene alguna alergia o intolerancia alimentaria, le recomendamos consultar con nuestro personal antes de realizar cualquier pedido.
-      </p>
-      <p>
-        Gelateria Di Amore no se responsabiliza de las reacciones alérgicas derivadas del consumo de productos sin haber informado previamente al personal sobre sus alergias.
-      </p>
-    </section>
+      <app-divisor />
 
-    <section class="seccion-legal">
-      <h2>6. Propiedad Intelectual</h2>
-      <p>
-        Todos los contenidos de este sitio web, incluyendo textos, imágenes, logotipos, diseños y código fuente, son propiedad de Gelateria Di Amore o de sus proveedores de contenido, y están protegidos por las leyes de propiedad intelectual aplicables.
-      </p>
-      <p>
-        Queda prohibida la reproducción total o parcial de estos contenidos sin la autorización expresa y por escrito de Gelateria Di Amore.
-      </p>
-    </section>
-
-    <section class="seccion-legal">
-      <h2>7. Limitación de Responsabilidad</h2>
-      <p>
-        Gelateria Di Amore no garantiza la disponibilidad ininterrumpida del sitio web ni la ausencia de errores en los contenidos. En ningún caso seremos responsables de los daños directos, indirectos, incidentales o consecuentes derivados del uso o imposibilidad de uso del sitio.
-      </p>
-      <p>
-        Los enlaces a sitios web de terceros incluidos en este sitio se proporcionan únicamente como referencia. No tenemos control sobre dichos sitios y no asumimos responsabilidad alguna por su contenido o funcionamiento.
-      </p>
-    </section>
-
-    <section class="seccion-legal">
-      <h2>8. Contacto</h2>
-      <p>
-        Si tiene alguna pregunta sobre estos Términos y Condiciones, puede ponerse en contacto con nosotros a través de:
-      </p>
-      <ul>
-        <li><strong>Email:</strong> gelateriadiamore&#64;gmail.com</li>
-        <li><strong>Teléfono:</strong> +34 935 972 102</li>
-        <li><strong>Dirección:</strong> Calle Granada, N.9, 29015 Málaga</li>
-      </ul>
-      <p>
-        También puede utilizar nuestro <a routerLink="/contacto">formulario de contacto</a>.
-      </p>
-    </section>
-
-    <app-divisor />
-
-    <div class="enlaces-relacionados">
-      <a routerLink="/politica">Política de Privacidad</a>
-      <a routerLink="/cookies">Política de Cookies</a>
-      <a routerLink="/">Volver al inicio</a>
+      <div class="enlaces-relacionados">
+        @for (enlace of data.enlaces; track enlace.texto) {
+          @if (enlace.routerLink) {
+            <a [routerLink]="enlace.routerLink">{{ enlace.texto }}</a>
+          } @else if (enlace.href) {
+            <a [href]="enlace.href" target="_blank" rel="noopener noreferrer">{{ enlace.texto }}</a>
+          }
+        }
+      </div>
     </div>
-  </div>
-</main>
+  </main>
+}

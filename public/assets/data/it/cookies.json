@@ -1,0 +1,84 @@
+{
+  "titulo": "Informativa sui Cookie",
+  "secciones": [
+    {
+      "h2": "1. Cosa sono i Cookie?",
+      "parrafos": [
+        "I cookie sono piccoli file di testo che vengono memorizzati sul dispositivo dell'utente (computer, tablet o cellulare) quando visita un sito web. Consentono al sito di ricordare le azioni e le preferenze dell'utente per un determinato periodo di tempo, evitando di doverle reinserire ogni volta che si visita il sito o si naviga da una pagina all'altra.",
+        "I cookie non sono virus né malware: sono semplicemente file di dati che migliorano l'esperienza di navigazione."
+      ]
+    },
+    {
+      "h2": "2. Tipi di Cookie che Utilizziamo",
+      "parrafos": ["Sul sito web di Gelateria Di Amore utilizziamo i seguenti tipi di cookie:"]
+    },
+    {
+      "h2": "Cookie Tecnici o Necessari",
+      "nivel": 3,
+      "parrafos": ["Sono indispensabili per il corretto funzionamento del sito web. Senza di essi, alcuni servizi non sarebbero disponibili. Non raccolgono informazioni personali identificabili e non richiedono il consenso dell'utente."],
+      "lista": [
+        "<strong>session_id:</strong> Mantiene la sessione attiva durante la visita. Durata: sessione.",
+        "<strong>cookie_consent:</strong> Registra la preferenza dell'utente sull'uso dei cookie. Durata: 1 anno."
+      ]
+    },
+    {
+      "h2": "Cookie di Analisi o Statistici",
+      "nivel": 3,
+      "parrafos": ["Ci consentono di capire come gli utenti interagiscono con il sito web per migliorarne il funzionamento. Le informazioni raccolte sono anonime e aggregate."],
+      "lista": [
+        "<strong>_ga, _gid:</strong> Cookie di Google Analytics per analizzare il traffico del sito. Durata: fino a 2 anni.",
+        "<strong>_gat:</strong> Limita il tasso di richieste a Google Analytics. Durata: 1 minuto."
+      ]
+    },
+    {
+      "h2": "Cookie di Preferenze o Funzionalità",
+      "nivel": 3,
+      "parrafos": ["Consentono al sito web di ricordare le scelte dell'utente (come la lingua o la regione) e di fornire funzionalità migliorate e più personalizzate."],
+      "lista": [
+        "<strong>lang_pref:</strong> Salva la lingua preferita dall'utente. Durata: 30 giorni."
+      ]
+    },
+    {
+      "h2": "Cookie di Terze Parti",
+      "nivel": 3,
+      "parrafos": ["Alcune funzionalità del nostro sito web utilizzano servizi di terze parti che possono installare i propri cookie:"],
+      "lista": [
+        "<strong>Google Maps:</strong> Utilizziamo Google Maps per mostrare la nostra ubicazione. Google potrebbe installare cookie propri. Consultare la <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">informativa sulla privacy di Google</a>.",
+        "<strong>Social media:</strong> I pulsanti di condivisione sui social media (Instagram, Facebook, TikTok) possono installare cookie di quelle piattaforme."
+      ]
+    },
+    {
+      "h2": "3. Come Gestire i Cookie?",
+      "parrafos": ["È possibile configurare il browser per accettare, rifiutare o eliminare i cookie. Di seguito le istruzioni per i principali browser:"],
+      "lista": [
+        "<strong>Google Chrome:</strong> Menu > Impostazioni > Privacy e sicurezza > Cookie e altri dati dei siti.",
+        "<strong>Mozilla Firefox:</strong> Menu > Opzioni > Privacy e sicurezza > Cookie e dati dei siti.",
+        "<strong>Safari:</strong> Preferenze > Privacy > Cookie e dati dei siti web.",
+        "<strong>Microsoft Edge:</strong> Menu > Impostazioni > Privacy, ricerca e servizi > Cookie."
+      ],
+      "parrafosPost": ["Si noti che la disabilitazione di alcuni cookie potrebbe influire sul funzionamento del sito web e sull'esperienza di navigazione."]
+    },
+    {
+      "h2": "4. Consenso",
+      "parrafos": ["Continuando a navigare nel nostro sito web senza modificare le impostazioni dei cookie, l'utente accetta l'utilizzo dei cookie come descritto in questa informativa. È possibile revocare il consenso in qualsiasi momento configurando il browser per rifiutare i cookie o eliminando quelli già installati."]
+    },
+    {
+      "h2": "5. Aggiornamenti dell'Informativa",
+      "parrafos": ["Potremmo aggiornare periodicamente la nostra Informativa sui Cookie per riflettere le modifiche ai cookie che utilizziamo o per altre ragioni operative, legali o normative. Si raccomanda di visitare questa pagina regolarmente per essere informati sull'utilizzo che facciamo dei cookie."]
+    },
+    {
+      "h2": "6. Contatto",
+      "parrafos": ["Per qualsiasi domanda relativa alla nostra Informativa sui Cookie, è possibile contattarci a:"],
+      "lista": [
+        "<strong>E-mail:</strong> gelateriadiamore@gmail.com",
+        "<strong>Indirizzo:</strong> Calle Granada, N.9, 29015 Málaga"
+      ],
+      "parrafosPost": ["È possibile utilizzare anche il nostro <a href=\"/contacto\">modulo di contatto</a>."]
+    }
+  ],
+  "enlaces": [
+    { "texto": "Condizioni d'Uso", "routerLink": "/condiciones" },
+    { "texto": "Informativa sulla Privacy", "routerLink": "/politica" },
+    { "texto": "Torna alla home", "routerLink": "/" }
+  ]
+}

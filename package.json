@@ -19,6 +19,7 @@
     "@angular/router": "^21.2.0",
     "@tailwindcss/postcss": "^4.2.2",
     "@vercel/analytics": "^2.0.1",
+    "nodemailer": "^8.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
